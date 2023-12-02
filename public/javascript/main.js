@@ -22,12 +22,6 @@ document.querySelector("i.ti-menu").addEventListener("click", function () {
     document
         .querySelector("div.content-wrapper")
         .classList.toggle("max-w-[calc(100%-80px)]");
-
-    // document
-    //     .querySelector("div.content-wrapper")
-    //     .classList.toggle("max-w-[calc(100%-250px)]");
-
-    // document.querySelector(".videos-grid").classList.toggle("w-[100%]")
 });
 
 document
