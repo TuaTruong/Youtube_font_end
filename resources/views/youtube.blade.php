@@ -31,6 +31,7 @@
       border-radius: 0;
     } */
     </style>
+    <title>Youtube</title>
   </head>
   <body class="h-screen">
     <div class="header-wrapper fixed w-[100%] h-[62px] px-2 py-2 bg-white z-10 mr-1">
@@ -144,10 +145,10 @@
 
           <div class="upload-btn relative" aria-label="Tuan">
             <i
-              class="ti-video-camera cursor-pointer hover:bg-[#ccc] py-4 px-4 rounded-full"
+              class="button-dropdown ti-video-camera cursor-pointer hover:bg-[#ccc] py-4 px-4 rounded-full"
             ></i>
             <div
-              class="absolute hidden w-40 mt-3 bg-white border shadow-md ti-video-camera-dropdown"
+              class="dropdown absolute hidden w-40 mt-3 bg-white border shadow-md ti-video-camera-dropdown"
             >
               <div
                 class="flex space-x-2 items-center p-2 cursor-pointer hover:bg-[#f8f8f8]"
@@ -172,10 +173,10 @@
 
           <div class="notifications-wrapper relative" aria-label="Tuan">
             <i
-              class="show-notifications ti-microphone cursor-pointer hover:bg-[#ccc] py-4 px-4 rounded-full"
+              class="button-dropdown show-notifications ti-microphone cursor-pointer hover:bg-[#ccc] py-4 px-4 rounded-full"
             ></i>
             <div
-              class="notification-scroll hidden absolute w-[480px] border shadow-md bg-white top-8 right-8 max-h-[642px] overflow-y-auto"
+              class="dropdown absolute notification-scroll hidden w-[480px] border shadow-md bg-white top-8 right-8 max-h-[642px] overflow-y-auto"
             >
               <div class="flex justify-between p-4 items-center border-b-2">
                 <span>Thông báo</span>
@@ -414,11 +415,11 @@
             <img
               src="{{asset('img/T.jpg')}}"
               alt=""
-              class="show-profile rounded-full cursor-pointer"
+              class="button-dropdown show-profile rounded-full cursor-pointer"
             />
 
             <div
-              class="hidden absolute right-4 top-14 bg-white shadow-md w-[268px] font-sans"
+              class="dropdown absolute hidden right-4 top-14 bg-white shadow-md w-[268px] font-sans"
             >
               <div class="identifier flex items-center p-4 border-b-2">
                 <img
@@ -618,34 +619,53 @@
             <ti class="ti-arrow-circle-right"></ti>
           </div>
           <div
-            class="flex items-center px-2 py-2 space-x-2 cursor-pointer rounded-xl hover:bg-slate-400"
+            class="me-item flex items-center px-2 py-2 space-x-2 cursor-pointer rounded-xl hover:bg-slate-400"
           >
             <div class="ti-search"></div>
             <span>Kênh của bạn</span>
           </div>
           <div
-            class="flex items-center px-2 py-2 space-x-2 cursor-pointer rounded-xl hover:bg-slate-400"
+            class="me-item flex items-center px-2 py-2 space-x-2 cursor-pointer rounded-xl hover:bg-slate-400"
           >
             <div class="ti-search"></div>
             <span>Video đã xem</span>
           </div>
           <div
-            class="flex items-center px-2 py-2 space-x-2 cursor-pointer rounded-xl hover:bg-slate-400"
+            class="me-item flex items-center px-2 py-2 space-x-2 cursor-pointer rounded-xl hover:bg-slate-400"
           >
             <div class="ti-search"></div>
             <span>Video của bạn</span>
           </div>
           <div
-            class="flex items-center px-2 py-2 space-x-2 cursor-pointer rounded-xl hover:bg-slate-400"
+            class="me-item flex items-center px-2 py-2 space-x-2 cursor-pointer rounded-xl hover:bg-slate-400"
           >
             <div class="ti-search"></div>
             <span>Xem sau</span>
           </div>
           <div
-            class="flex items-center px-2 py-2 space-x-2 cursor-pointer rounded-xl hover:bg-slate-400"
+            class="me-item hidden flex items-center px-2 py-2 space-x-2 cursor-pointer rounded-xl hover:bg-slate-400"
+          >
+            <div class="ti-search"></div>
+            <span>Tài chính</span>
+          </div>
+          <div
+            class="me-item hidden flex items-center px-2 py-2 space-x-2 cursor-pointer rounded-xl hover:bg-slate-400"
+          >
+            <div class="ti-search"></div>
+            <span>Thế giới</span>
+          </div>
+
+          <div
+            class="more-button flex items-center px-2 py-2 space-x-2 cursor-pointer rounded-xl hover:bg-slate-400"
           >
             <div class="ti-arrow-circle-down"></div>
             <span>Thêm</span>
+          </div>
+          <div
+            class="less-button hidden flex items-center px-2 py-2 space-x-2 cursor-pointer rounded-xl hover:bg-slate-400"
+          >
+            <div class="ti-arrow-circle-up"></div>
+            <span>Ẩn</span>
           </div>
         </div>
 
@@ -1166,54 +1186,6 @@
       <div
         class="shorts-grid flex"
       >
-        <div class="short-item px-2 short h-auto">
-          <img
-            src="{{asset('img/short.webp')}}"
-            width="272"
-            
-            class="rounded-xl"
-          />
-          <div class="flex flex-col mt-2 space-y-1 short-detail">
-            <h3 class="font-bold">Spot the hidden people for $10,000</h3>
-            <p>10 Tr lượt xem</p>
-          </div>
-        </div>
-        <div class="short-item px-2 short h-auto">
-          <img
-            src="{{asset('img/short.webp')}}"
-            width="272"
-            
-            class="rounded-xl"
-          />
-          <div class="flex flex-col mt-2 space-y-1 short-detail">
-            <h3 class="font-bold">Spot the hidden people for $10,000</h3>
-            <p>10 Tr lượt xem</p>
-          </div>
-        </div>
-        <div class="short-item px-2 short h-auto">
-          <img
-            src="{{asset('img/short.webp')}}"
-            width="272"
-            
-            class="rounded-xl"
-          />
-          <div class="flex flex-col mt-2 space-y-1 short-detail">
-            <h3 class="font-bold">Spot the hidden people for $10,000</h3>
-            <p>10 Tr lượt xem</p>
-          </div>
-        </div>
-        <div class="short-item px-2 short h-auto">
-          <img
-            src="{{asset('img/short.webp')}}"
-            width="272"
-            
-            class="rounded-xl"
-          />
-          <div class="flex flex-col mt-2 space-y-1 short-detail">
-            <h3 class="font-bold">Spot the hidden people for $10,000</h3>
-            <p>10 Tr lượt xem</p>
-          </div>
-        </div>
         <div class="short-item px-2 short h-auto">
           <img
             src="{{asset('img/short.webp')}}"
