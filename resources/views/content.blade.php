@@ -222,15 +222,15 @@
             </div>
         </div>
     </div>
-    <div class="short-container col-span-full row-start-3 row-end-4">
+    <div class="short-container col-span-full row-start-3 row-end-4 inline-block w-[100%]">
         <div class="sm:flex items-center my-4 space-x-2 text-3xl font-bold shorts w-[100%]">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" focusable="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" focusable="false" class="inline">
                 <g>
                     <path d="M17.77,10.32l-1.2-.5L18,9.06a3.74,3.74,0,0,0-3.5-6.62L6,6.94a3.74,3.74,0,0,0,.23,6.74l1.2.49L6,14.93a3.75,3.75,0,0,0,3.5,6.63l8.5-4.5a3.74,3.74,0,0,0-.23-6.74Z" fill="red"></path>
                     <polygon points="10 14.65 15 12 10 9.35 10 14.65" fill="#fff"></polygon>
                 </g>
             </svg>
-            <h1>Shorts</h1>
+            <h1 class="inline">Shorts</h1>
         </div>
 
         <div class="shorts-grid gap-4 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
