@@ -1,9 +1,95 @@
 document
-    .querySelector("i.ti-video-camera")
+    .querySelector("div.upload-btn")
     .addEventListener("click", function() {
         document
-            .querySelector(".ti-video-camera-dropdown")
+            .querySelector(".upload-dropdown")
             .classList.toggle("hidden");
+    });
+
+document
+    .querySelector("div.notification-button")
+    .addEventListener("click", function() {
+        document
+            .querySelector(".notification-dropdown")
+            .classList.toggle("hidden");
+    });
+
+document
+    .querySelector("img.show-profile")
+    .addEventListener("click", function() {
+        let subDropdownExist = false;
+        let subDropdowns = document.querySelectorAll(".sub-dropdown")
+        subDropdowns.forEach(el => {
+            if (!el.classList.contains("hidden")) {
+                subDropdownExist = true
+                el.classList.add("hidden")
+            }
+        })
+
+        if (!subDropdownExist) {
+            document
+                .querySelector("div.profile-wrapper > div.main-profile-dropdown")
+                .classList.toggle("hidden");
+        }
+    });
+
+
+document.querySelector("i.back-main-dropdown-button.change-account-button").addEventListener("click", el => {
+    document.querySelector(".change-account-dropdown").classList.add("hidden")
+    document.querySelector(".main-profile-dropdown").classList.remove("hidden")
+})
+
+document.querySelector("div.main-profile-dropdown .change-account-button").addEventListener("click", function() {
+    document
+        .querySelector("div.profile-wrapper > div.main-profile-dropdown")
+        .classList.add("hidden");
+    document
+        .querySelector("div.profile-wrapper > div.change-account-dropdown")
+        .classList.remove("hidden");
+})
+
+document.querySelector("i.back-main-dropdown-button.change-ui-button").addEventListener("click", el => {
+    document.querySelector(".change-ui-dropdown").classList.add("hidden")
+    document.querySelector(".main-profile-dropdown").classList.remove("hidden")
+})
+
+document.querySelector("div.main-profile-dropdown .change-ui-button").addEventListener("click", function() {
+    document
+        .querySelector("div.profile-wrapper > div.main-profile-dropdown")
+        .classList.add("hidden");
+    document
+        .querySelector("div.profile-wrapper > div.change-ui-dropdown")
+        .classList.remove("hidden");
+})
+
+document.querySelector("i.back-main-dropdown-button.change-language-button").addEventListener("click", el => {
+    document.querySelector(".change-language-dropdown").classList.add("hidden")
+    document.querySelector(".main-profile-dropdown").classList.remove("hidden")
+})
+
+document.querySelector("div.main-profile-dropdown .change-language-button").addEventListener("click", function() {
+    document
+        .querySelector("div.profile-wrapper > div.main-profile-dropdown")
+        .classList.add("hidden");
+    document
+        .querySelector("div.profile-wrapper > div.change-language-dropdown")
+        .classList.remove("hidden");
+})
+
+
+
+
+
+document
+    .querySelector(".video-actions > .button-dropdown")
+    .addEventListener("click", function() {
+        document
+            .querySelector(".video-actions > .button-dropdown").classList.toggle("hidden")
+
+        document
+            .querySelector(".video-actions > .dropdown")
+            .classList.toggle("hidden");
+
     });
 
 document.querySelector("i.ti-menu").addEventListener("click", function() {
@@ -24,21 +110,9 @@ document.querySelector("i.ti-menu").addEventListener("click", function() {
         .classList.toggle("max-w-[calc(100%-80px)]");
 });
 
-document
-    .querySelector("i.show-notifications")
-    .addEventListener("click", function() {
-        document
-            .querySelector("div.notifications-wrapper > div")
-            .classList.toggle("hidden");
-    });
 
-document
-    .querySelector("img.show-profile")
-    .addEventListener("click", function() {
-        document
-            .querySelector("div.profile-wrapper > div")
-            .classList.toggle("hidden");
-    });
+
+
 
 document.addEventListener("click", function(event) {
     var dropdowns = document.querySelectorAll(".button-dropdown");
@@ -156,39 +230,6 @@ function adjustShortGridItem() {
         }
     }
 }
-
-// function adjustVideoGridItem() {
-//     let maxGridItem;
-//     let windowWidth = window.innerWidth;
-//     if (windowWidth <= 640) {
-//         maxGridItem = 1;
-//     } else if (windowWidth > 640 && windowWidth <= 1280) {
-//         maxGridItem = 2;
-//     } else if (windowWidth > 1280 && windowWidth <= 1536) {
-//         maxGridItem = 4;
-//     } else {
-//         maxGridItem = 5;
-//     }
-//     const gridContainer = document.querySelector(".videos-grid");
-//     let gridsCount = gridContainer.querySelectorAll("div.video-item").length;
-//     for (let i = 0; i <= gridsCount - 1; i++) {
-//         console.log(maxGridItem * 2);
-//         if (i >= maxGridItem * 2) {
-//             gridContainer
-//                 .querySelectorAll("div.video-item")
-//                 [i].classList.add("hidden");
-//         } else {
-//             gridContainer
-//                 .querySelectorAll("div.video-item")
-//                 [i].classList.remove("hidden");
-//         }
-//     }
-// }
-
-// function adjustGridItem() {
-//     adjustShortGridItem();
-//     adjustVideoGridItem();
-// }
 
 document.addEventListener("DOMContentLoaded", adjustShortGridItem);
 window.addEventListener("resize", adjustShortGridItem);
