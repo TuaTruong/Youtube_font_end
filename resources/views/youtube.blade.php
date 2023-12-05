@@ -103,11 +103,11 @@
     <!-- End sidebar -->
 
 
-    <div class="content-wrapper ml-[250px] mt-[80px] flex flex-col w-[calc(100%-250px)]" style="display: inline-block">
+    <div class="content-wrapper ml-[250px] mt-[80px] w-[calc(100%-250px)]" style="display: inline-block">
         @include("content")
     </div>
 
-    <script src="{{asset('javascript/main.js')}}"></script>
+    <script src="{{asset('javascript/home.js')}}"></script>
 </body>
 
 </html>

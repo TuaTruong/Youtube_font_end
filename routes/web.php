@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('youtube');
 });
+
+
+Route::get("/video-detail",function(){
+    return view("video-detail");
+});

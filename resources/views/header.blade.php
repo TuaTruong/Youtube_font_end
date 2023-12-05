@@ -254,7 +254,6 @@
 
         <div class="profile-wrapper w-[42px] h-[42px] relative">
             <img src="{{asset('img/T.jpg')}}" alt="" class="button-dropdown show-profile rounded-full cursor-pointer" />
-
             <div class="change-account-dropdown sub-dropdown hidden dropdown absolute right-4 top-14 bg-white w-[268px] font-sans">
                 <div class="flex items-center p-2 border-b-2">
                     <i class="back-main-dropdown-button change-account-button ti-arrow-left p-2 rounded-full hover:bg-slate-300 cursor-pointer"></i>
@@ -315,10 +314,50 @@
                     <span>Giao diện sáng</span>
                 </div>
             </div>
+
             <div class="change-language-dropdown hidden sub-dropdown dropdown absolute right-4 top-14 bg-white w-[268px] font-sans">
                 <div class="flex items-center p-2 border-b-2">
                     <i class="back-main-dropdown-button change-language-button ti-arrow-left p-2 rounded-full hover:bg-slate-300 cursor-pointer"></i>
                     <span class="ml-1 text-lg">Ngôn ngữ</span>
+                </div>
+
+                <div class="px-4 py-3 cursor-pointer hover:bg-slate-200 flex space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
+                        <path d="m9 18.7-5.4-5.4.7-.7L9 17.3 20.6 5.6l.7.7L9 18.7z"></path>
+                    </svg>
+                    <span>Việt Nam</span>
+                </div>
+                <div class="px-4 py-3 cursor-pointer hover:bg-slate-200 flex space-x-3">
+                    <div class="w-[24px] h-[24px]"></div>
+                    <span>Thái Lan</span>
+                </div>
+                <div class="px-4 py-3 cursor-pointer hover:bg-slate-200 flex space-x-3">
+                    <div class="w-[24px] h-[24px]"></div>
+                    <span>Trung Quốc</span>
+                </div>
+            </div>
+
+            <div class="change-restrict-mode-dropdown hidden sub-dropdown dropdown absolute right-4 top-14 bg-white w-[268px] font-sans">
+                <div class="flex items-center p-2 border-b-2">
+                    <i class="back-main-dropdown-button change-restrict-mode-button ti-arrow-left p-2 rounded-full hover:bg-slate-300 cursor-pointer"></i>
+                    <span class="ml-1 text-lg">Chế độ hạn chế</span>
+                </div>
+
+                <div class="px-3 py-1 text-[11px] text-slate-800">Chế độ này giúp ẩn các video có thể chứa nội dung dành cho người trưởng thành. Tuy nhiên, không có bộ lọc nào là chính xác 100%.</div>
+                <div class="px-3 text-[11px]">Tùy chọn cài đặt này chỉ áp dụng cho trình duyệt này.</div>
+                <div class="px-3 flex justify-between items-center py-2">
+                    <span class="uppercase text-[12px]">kích hoạt chế độ hạn chế</span>
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer">
+                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="change-destination-dropdown hidden sub-dropdown dropdown absolute right-4 top-14 bg-white w-[268px] font-sans">
+                <div class="flex items-center p-2 border-b-2">
+                    <i class="back-main-dropdown-button change-destination-button ti-arrow-left p-2 rounded-full hover:bg-slate-300 cursor-pointer"></i>
+                    <span class="ml-1 text-lg">Chọn vị trí của bạn</span>
                 </div>
 
                 <div class="px-4 py-3 cursor-pointer hover:bg-slate-200 flex space-x-3">
@@ -408,7 +447,7 @@
                         <i class="ti-angle-right my-1 mx-2"></i>
                     </div>
 
-                    <div class="flex cursor-pointer hover:bg-[#f0f0f0] py-2 items-center justify-between">
+                    <div class="change-restrict-mode-button flex cursor-pointer hover:bg-[#f0f0f0] py-2 items-center justify-between">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" focusable="false" class="my-1 mx-2">
                             <path d="M12 20.95Q8.975 20.075 6.987 17.312Q5 14.55 5 11.1V5.7L12 3.075L19 5.7V11.35Q18.775 11.275 18.5 11.2Q18.225 11.125 18 11.075V6.375L12 4.15L6 6.375V11.1Q6 12.575 6.438 13.938Q6.875 15.3 7.625 16.438Q8.375 17.575 9.413 18.425Q10.45 19.275 11.625 19.725L11.675 19.7Q11.8 20 11.975 20.288Q12.15 20.575 12.375 20.825Q12.275 20.85 12.188 20.888Q12.1 20.925 12 20.95ZM17 17Q17.625 17 18.062 16.562Q18.5 16.125 18.5 15.5Q18.5 14.875 18.062 14.438Q17.625 14 17 14Q16.375 14 15.938 14.438Q15.5 14.875 15.5 15.5Q15.5 16.125 15.938 16.562Q16.375 17 17 17ZM17 20Q17.8 20 18.438 19.65Q19.075 19.3 19.5 18.7Q18.925 18.35 18.3 18.175Q17.675 18 17 18Q16.325 18 15.7 18.175Q15.075 18.35 14.5 18.7Q14.925 19.3 15.562 19.65Q16.2 20 17 20ZM17 21Q15.325 21 14.163 19.837Q13 18.675 13 17Q13 15.325 14.163 14.162Q15.325 13 17 13Q18.675 13 19.837 14.162Q21 15.325 21 17Q21 18.675 19.837 19.837Q18.675 21 17 21ZM12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Q12 11.95 12 11.95Z"></path>
                         </svg>
@@ -416,7 +455,7 @@
                         <i class="ti-angle-right my-1 mx-2"></i>
                     </div>
 
-                    <div class="flex cursor-pointer hover:bg-[#f0f0f0] py-2 items-center justify-between">
+                    <div class="change-destination-button flex cursor-pointer hover:bg-[#f0f0f0] py-2 items-center justify-between">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" focusable="false" class="my-1 mx-2">
                             <path d="M11.99,1.98C6.46,1.98,1.98,6.47,1.98,12s4.48,10.02,10.01,10.02c5.54,0,10.03-4.49,10.03-10.02S17.53,1.98,11.99,1.98z M8.86,14.5c-0.16-0.82-0.25-1.65-0.25-2.5c0-0.87,0.09-1.72,0.26-2.55h6.27c0.17,0.83,0.26,1.68,0.26,2.55 c0,0.85-0.09,1.68-0.25,2.5H8.86z M14.89,15.5c-0.54,1.89-1.52,3.64-2.89,5.15c-1.37-1.5-2.35-3.25-2.89-5.15H14.89z M9.12,8.45 c0.54-1.87,1.52-3.61,2.88-5.1c1.36,1.49,2.34,3.22,2.88,5.1H9.12z M16.15,9.45h4.5c0.24,0.81,0.37,1.66,0.37,2.55 c0,0.87-0.13,1.71-0.36,2.5h-4.51c0.15-0.82,0.24-1.65,0.24-2.5C16.39,11.13,16.3,10.28,16.15,9.45z M20.29,8.45h-4.38 c-0.53-1.97-1.47-3.81-2.83-5.4C16.33,3.45,19.04,5.56,20.29,8.45z M10.92,3.05c-1.35,1.59-2.3,3.43-2.83,5.4H3.71 C4.95,5.55,7.67,3.44,10.92,3.05z M3.35,9.45h4.5C7.7,10.28,7.61,11.13,7.61,12c0,0.85,0.09,1.68,0.24,2.5H3.34 c-0.23-0.79-0.36-1.63-0.36-2.5C2.98,11.11,3.11,10.26,3.35,9.45z M3.69,15.5h4.39c0.52,1.99,1.48,3.85,2.84,5.45 C7.65,20.56,4.92,18.42,3.69,15.5z M13.09,20.95c1.36-1.6,2.32-3.46,2.84-5.45h4.39C19.08,18.42,16.35,20.55,13.09,20.95z"></path>
                         </svg>
