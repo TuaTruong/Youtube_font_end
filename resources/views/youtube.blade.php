@@ -13,7 +13,7 @@
             font-family: "Inter", sans-serif;
         }
 
-        .sidebar-wrapper::-webkit-scrollbar,
+        /* .sidebar-wrapper::-webkit-scrollbar,
         .notification-scroll::-webkit-scrollbar {
             height: 5px;
             width: 10px;
@@ -24,7 +24,7 @@
         .notification-scroll::-webkit-scrollbar-thumb {
             background-color: grey;
             border-radius: 10px;
-        }
+        } */
 
         .show-more-short::after {
             content: "";
