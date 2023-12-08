@@ -87,7 +87,9 @@
     <div class="modal-sidebar hidden fixed top-0 right-0 left-0 bottom-0 bg-[rgba(0,0,0,0.5)] z-10">
         <div class=" w-[224px] p-2 h-screen overflow-y-scroll text-[13px] bg-white">
             <div class="flex items-center my-1 border-b-[1px] py-1">
+                
                 <i class="ti-menu hide-modal-sidebar p-4 cursor-pointer hover:bg-[#ccc] rounded-full"></i>
+                
                 <div class="cursor-pointer ytb-logo">
                     <svg xmlns="http://www.w3.org/2000/svg" class="external-icon" viewBox="0 0 90 20" focusable="false" width="90" height="20" class="inline">
                         <svg viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">

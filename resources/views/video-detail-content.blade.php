@@ -96,7 +96,7 @@
 
 
         <div class="flex flex-col w-[100%] row-span-2 ">
-            <ul class="suggest items-center justify-start no-wrap h-[56px] overflow-x-auto hidden xl:flex">
+            <ul class="suggest items-center justify-start no-wrap h-[56px] overflow-x-auto flex">
                 <li class="text-white bg-[#0f0f0f] px-4 py-1 rounded-lg mx-1 cursor-pointer whitespace-nowrap">
                     Tất cả
                 </li>
