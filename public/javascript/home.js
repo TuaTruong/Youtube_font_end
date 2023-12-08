@@ -1,3 +1,43 @@
+document.querySelectorAll(".notification-item").forEach(notiEl =>{
+    notiEl.querySelectorAll(".ti-more.button-dropdown").forEach(el =>{
+        el.addEventListener("click",function(){
+            this.parentNode.querySelector(".notification-item-dropdown").classList.toggle("hidden")
+        })
+ })
+})
+
+document.querySelectorAll(".video-item").forEach(notiEl =>{
+    notiEl.querySelectorAll(".video-actions .button-dropdown").forEach(el =>{
+        el.addEventListener("click",function(){
+            console.log("click")
+            console.log(this.parentNode)
+            this.parentNode.querySelector(".dropdown").classList.toggle("hidden")
+        })
+ })
+})
+
+document.querySelector(".show-search-bar.search-btn").addEventListener("click",function(){
+    if (window.innerWidth < 640){
+        document.querySelector(".end-header").classList.add("hidden")
+        document.querySelector(".start-header").classList.add("hidden")
+        document.querySelector(".center-header").classList.remove("hidden")
+        document.querySelector(".center-header").classList.remove("justify-center")
+        document.querySelector(".center-header").classList.add("justify-between")
+        document.querySelector(".center-header .back-btn").classList.remove("hidden")
+    }}
+)
+
+document.querySelector(".center-header .back-btn").addEventListener("click",function(){
+    if (window.innerWidth < 640){
+        document.querySelector(".end-header").classList.remove("hidden")
+        document.querySelector(".start-header").classList.remove("hidden")
+        document.querySelector(".center-header").classList.add("hidden")
+        document.querySelector(".center-header").classList.add("justify-center")
+        document.querySelector(".center-header").classList.remove("justify-between")
+        document.querySelector(".center-header .back-btn").classList.add("hidden")
+    }}
+)
+
 document
     .querySelector("div.upload-btn")
     .addEventListener("click", function() {
@@ -54,36 +94,27 @@ processSubDropdown("language")
 processSubDropdown("destination")
 processSubDropdown("restrict-mode")
 
-document
-    .querySelector(".video-actions > .button-dropdown")
-    .addEventListener("click", function() {
-        document
-            .querySelector(".video-actions > .button-dropdown").classList.toggle("hidden")
-        document
-            .querySelector(".video-actions > .button-dropdown").classList.toggle("block")
-        document
-            .querySelector(".video-actions > .dropdown")
-            .classList.toggle("hidden");
 
-    });
-
-document.querySelector("i.ti-menu").addEventListener("click", function() {
-    document.querySelector("div.sidebar-wrapper").classList.toggle("hidden");
-
-    document.querySelector("div.mini-sidebar").classList.toggle("hidden");
-
-    document
-        .querySelector("div.content-wrapper")
-        .classList.toggle("ml-[250px]");
-    document
-        .querySelector("div.content-wrapper")
-        .classList.toggle("w-[calc(100%-250px)]");
-
-    document.querySelector("div.content-wrapper").classList.toggle("ml-[80px]");
-    document
-        .querySelector("div.content-wrapper")
-        .classList.toggle("max-w-[calc(100%-80px)]");
+document.querySelector(".start-header i.ti-menu").addEventListener("click", function() {
+    console.log(this)
+    if(window.innerWidth < 1280){
+        document.querySelector("div.modal-sidebar").classList.toggle("hidden");
+    } else {
+        document.querySelector(".big-sidebar").classList.toggle("xl:block");
+        document.querySelector(".content-wrapper").classList.toggle("xl:ml-[250px]");
+        document.querySelector(".content-wrapper").classList.toggle("xl:w-[calc(100%-250px)]");
+        document.querySelector(".mini-sidebar").classList.toggle("hidden");
+    }
 });
+
+document.querySelector("i.ti-menu.hide-modal-sidebar").addEventListener("click", function() {
+    if(window.innerWidth < 1280){
+        document.querySelector("div.modal-sidebar").classList.toggle("hidden");
+    }
+});
+
+
+
 
 document.addEventListener("click", function(event) {
     var dropdowns = document.querySelectorAll(".button-dropdown");
@@ -99,55 +130,59 @@ document.addEventListener("click", function(event) {
         }
     });
 });
-
-document
-    .querySelector("div.me-sidebar > div.more-button")
+function handleToggleButtonSidebar(parrentSelector){
+    document
+    .querySelector(`${parrentSelector} ul.me-sidebar > li.more-button`)
     .addEventListener("click", function(event) {
         let itemCount = document
-            .querySelector("div.me-sidebar")
-            .querySelectorAll("div.me-item").length;
+            .querySelector(`${parrentSelector} ul.me-sidebar`)
+            .querySelectorAll("li.me-item").length;
 
         document
-            .querySelector("div.me-sidebar > div.more-button")
+            .querySelector(`${parrentSelector} ul.me-sidebar > li.more-button`)
             .classList.toggle("hidden");
         document
-            .querySelector("div.me-sidebar > div.less-button")
+            .querySelector(`${parrentSelector} ul.me-sidebar > li.less-button`)
             .classList.toggle("hidden");
 
         for (let i = 0; i <= itemCount - 1; i++) {
             let meItem = document
-                .querySelector("div.me-sidebar")
-                .querySelectorAll("div.me-item")[i];
+                .querySelector(`${parrentSelector} ul.me-sidebar`)
+                .querySelectorAll("li.me-item")[i];
             if (meItem.classList.contains("hidden")) {
                 meItem.classList.remove("hidden");
             }
         }
     });
 
-document
-    .querySelector("div.me-sidebar > div.less-button")
-    .addEventListener("click", function(event) {
-        let maxMeItem = 4;
-        let itemCount = document
-            .querySelector("div.me-sidebar")
-            .querySelectorAll("div.me-item").length;
+    document
+        .querySelector(`${parrentSelector} ul.me-sidebar > li.less-button`)
+        .addEventListener("click", function(event) {
+            let maxMeItem = 4;
+            let itemCount = document
+                .querySelector(`${parrentSelector} ul.me-sidebar`)
+                .querySelectorAll("li.me-item").length;
 
-        document
-            .querySelector("div.me-sidebar > div.more-button")
-            .classList.toggle("hidden");
-        document
-            .querySelector("div.me-sidebar > div.less-button")
-            .classList.toggle("hidden");
+            document
+                .querySelector(`${parrentSelector} ul.me-sidebar > li.more-button`)
+                .classList.toggle("hidden");
+            document
+                .querySelector(`${parrentSelector} ul.me-sidebar > li.less-button`)
+                .classList.toggle("hidden");
 
-        for (let i = 0; i <= itemCount - 1; i++) {
-            let meItem = document
-                .querySelector("div.me-sidebar")
-                .querySelectorAll("div.me-item")[i];
-            if (i >= maxMeItem) {
-                meItem.classList.add("hidden");
+            for (let i = 0; i <= itemCount - 1; i++) {
+                let meItem = document
+                    .querySelector(`${parrentSelector} ul.me-sidebar`)
+                    .querySelectorAll("li.me-item")[i];
+                if (i >= maxMeItem) {
+                    meItem.classList.add("hidden");
+                }
             }
-        }
-    });
+        });
+}
+
+handleToggleButtonSidebar(".modal-sidebar")
+handleToggleButtonSidebar(".big-sidebar")
 
 
 document.querySelector(".show-more-short-button").addEventListener("click", function() {
@@ -179,6 +214,7 @@ document.querySelector(".show-less-short-button").addEventListener("click", func
 })
 
 
+
 function adjustShortGridItem() {
     if (document.querySelector(".show-less-short-button").classList.contains("hidden")) {
         let windowWidth = window.innerWidth;
@@ -191,7 +227,6 @@ function adjustShortGridItem() {
 
         const gridContainer = document.querySelector(".shorts-grid");
         let gridsCount = gridContainer.querySelectorAll("div.short-item").length;
-        console.log(gridsCount)
         for (let i = 0; i <= gridsCount - 1; i++) {
             if (i >= maxGridItem) {
                 gridContainer
@@ -203,6 +238,24 @@ function adjustShortGridItem() {
         }
     }
 }
+function adjustSidebar(){
+    if (window.innerWidth < 640){
+        if (!document.querySelector("div.mini-sidebar").classList.contains("hidden")){
+            document.querySelector("div.mini-sidebar").classList.add("hidden")
+        }
+    }
+    
+    if (window.innerWidth > 1280){
+        if (!document.querySelector("div.modal-sidebar").classList.contains("hidden")){
+            document.querySelector("div.modal-sidebar").classList.add("hidden")
+        }
+    }
+}
+
+function adjustUI(){
+    adjustSidebar();
+    adjustShortGridItem();
+}
 
 document.addEventListener("DOMContentLoaded", adjustShortGridItem);
-window.addEventListener("resize", adjustShortGridItem);
+window.addEventListener("resize", adjustUI);
