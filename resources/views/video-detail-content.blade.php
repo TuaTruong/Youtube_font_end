@@ -709,7 +709,6 @@
                             <span class="font-bold text-[10px]">@kimnguyen-ou5yy</span>
                             <span class="text-slate-400">3 tuần trước</span>
                         </div>
-
                         <div class="text-comment">Hay quá anh ơi</div>
                         <div class="flex space-x-2 items-center">
                             <div class="like hover:bg-slate-200 cursor-pointer p-1 rounded-full">
