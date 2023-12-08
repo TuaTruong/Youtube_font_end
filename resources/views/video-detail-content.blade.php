@@ -8,7 +8,7 @@
                     <div class="channel-profile flex justify-between space-x-2">
                         <img src="{{asset('img/avt.jpg')}}" width="48" height="48" class="rounded-full self-start">
                         <div class="channel-name-follow flex flex-col space-y-1 p-1">
-                            <div class="font-bold">Bản tình ca</div>
+                            <div class="font-bold">Một Bản Tình Ca</div>
                             <div class="font-thin text-[12px] text-slate-500">181 N người đăng ký</div>
                         </div>
                         <div class="cursor-pointer hover:bg-slate-700 text-[12px] text-white bg-black font-semibold rounded-[30px] py-2 px-3 self-center">Đăng ký</div>
@@ -38,10 +38,31 @@
                             <span>Chia sẻ</span>
                         </div>
 
-                        <div class="rounded-full bg-slate-200 cursor-pointer hover:bg-slate-300 p-[7px]">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
+                        <div class="rounded-full main-video-action bg-slate-200 cursor-pointer hover:bg-slate-300 p-[7px] relative">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="button-dropdown" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                 <path d="M7.5 12c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5.67-1.5 1.5-1.5 1.5.67 1.5 1.5zm4.5-1.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm6 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"></path>
                             </svg>
+
+                            <ul class="main-video-action-dropdown dropdown hidden absolute py-1 bg-white w-[200px] right-7 top-10  xl:top-0 xl:left-10 rounded-lg">
+                                <li class="flex space-x-1 bg-white p-2 hover:bg-slate-200 cursor-pointer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
+                                        <path d="M8 7c0 .55-.45 1-1 1s-1-.45-1-1 .45-1 1-1 1 .45 1 1zm-1 9c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zm3.79-7.77L21 18.44V20h-3.27l-5.76-5.76-1.27 1.27c.19.46.3.96.3 1.49 0 2.21-1.79 4-4 4s-4-1.79-4-4 1.79-4 4-4c.42 0 .81.08 1.19.2l1.37-1.37-1.11-1.11C8 10.89 7.51 11 7 11c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4c0 .43-.09.84-.21 1.23zm-.71.71-.43-.44.19-.58c.11-.34.16-.64.16-.92 0-1.65-1.35-3-3-3S4 5.35 4 7s1.35 3 3 3c.36 0 .73-.07 1.09-.21l.61-.24.46.46 1.11 1.11.71.71-.71.71-1.37 1.37-.43.43-.58-.18C7.55 14.05 7.27 14 7 14c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3c0-.38-.07-.75-.22-1.12l-.25-.61.47-.47 1.27-1.27.71-.71.71.71L18.15 19H20v-.15l-9.92-9.91zM17.73 4H21v1.56l-5.52 5.52-2.41-2.41L17.73 4zm.42 1-3.67 3.67 1 1L20 5.15V5h-1.85z"></path>
+                                    </svg>
+                                    <span>Tạo đoạn video</span>
+                                </li>
+                                <li class="flex space-x-1 bg-white p-2 hover:bg-slate-200 cursor-pointer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
+                                        <path d="M22 13h-4v4h-2v-4h-4v-2h4V7h2v4h4v2zm-8-6H2v1h12V7zM2 12h8v-1H2v1zm0 4h8v-1H2v1z"></path>
+                                    </svg>
+                                    <span>Lưu</span>
+                                </li>
+                                <li class="flex space-x-1 bg-white p-2 hover:bg-slate-200 cursor-pointer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
+                                        <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
+                                    </svg>
+                                    <span>Báo cáo vi phạm</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -60,7 +81,7 @@
                     <span class="hashtag">#nhacchilltiktok</span><br>
                     <span class="hashtag">#bantinhca</span><br><br>
 
-                    ✪ More about Bản Tình Ca <br>
+                    ✪ More about Một Bản Tình Ca <br>
                     • Facebook: <a href="https://www.fb.com/H2OMusicc" class="hashtag">https://www.fb.com/H2OMusicc</a> <br> <br>
                     • Email: contact@1991s.vn <br>
                     ------------------------------------------- <br>
@@ -72,7 +93,7 @@
                 <div class="channel-profile flex space-x-2 my-4 items-center">
                     <img src="{{asset('img/avt.jpg')}}" width="96" height="96" class="rounded-full self-start">
                     <div class="channel-name-follow flex flex-col space-y-1 p-1">
-                        <div class="font-bold text-xl">Bản tình ca</div>
+                        <div class="font-bold text-xl">Một Bản Tình Ca</div>
                         <div class="font-thin text-[18px] text-slate-500">181 N người đăng ký</div>
                     </div>
                 </div>
@@ -131,24 +152,24 @@
 
             <div class="video-suggest flex flex-col space-y-2">
                 <div class="video-item col-span-1 flex m-2 space-x-2">
-                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94"/>
+                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94" />
                     <div class="group flex w-[100%]">
                         <div class="w-[calc(100%)] cursor-pointer">
                             <div class="line-clamp-2 overflow-hidden mb-1 text-[14px]">
                                 Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                                 Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                             </div>
-                            <div class="text-[#606060] text-[12px]">Bản tình ca</div>
+                            <div class="text-[#606060] text-[12px]">Một Bản Tình Ca</div>
                             <div class="text-[#606060] text-[12px]">
                                 1,2 triệu lượt xem • 8 tuần trước
                             </div>
                         </div>
-            
+
                         <div class="video-actions relative">
                             <svg class="button-dropdown block ml-[1px] cursor-pointer active:bg-slate-400 rounded-full p-[5px]" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                 <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
                             </svg>
-            
+
                             <div class="dropdown absolute hidden bg-white right-5">
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
@@ -175,13 +196,13 @@
                                     <span class="text-[8px]">Chia sẻ</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer mt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="M18.71 6C20.13 7.59 21 9.69 21 12c0 4.97-4.03 9-9 9-2.31 0-4.41-.87-6-2.29L18.71 6zM3 12c0-4.97 4.03-9 9-9 2.31 0 4.41.87 6 2.29L5.29 18C3.87 16.41 3 14.31 3 12zm9-10c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z" fill-rule="evenodd"></path>
                                     </svg>
                                     <span class="text-[8px]">Không quan tâm</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <g>
                                             <path d="M12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm7 11H5v-2h14v2z"></path>
                                         </g>
@@ -189,35 +210,35 @@
                                     <span class="text-[8px]">Không đề xuất kênh này</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
                                     </svg>
                                     <span class="text-[8px]">Báo vi phạm</span>
                                 </div>
-            
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="video-item col-span-1 flex m-2 space-x-2">
-                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94"/>
+                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94" />
                     <div class="group flex w-[100%]">
                         <div class="w-[calc(100%)] cursor-pointer">
                             <div class="line-clamp-2 overflow-hidden mb-1 text-[14px]">
                                 Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                                 Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                             </div>
-                            <div class="text-[#606060] text-[12px]">Bản tình ca</div>
+                            <div class="text-[#606060] text-[12px]">Một Bản Tình Ca</div>
                             <div class="text-[#606060] text-[12px]">
                                 1,2 triệu lượt xem • 8 tuần trước
                             </div>
                         </div>
-            
+
                         <div class="video-actions relative">
                             <svg class="button-dropdown block ml-[1px] cursor-pointer active:bg-slate-400 rounded-full p-[5px]" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                 <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
                             </svg>
-            
+
                             <div class="dropdown absolute hidden bg-white right-5">
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
@@ -244,13 +265,13 @@
                                     <span class="text-[8px]">Chia sẻ</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer mt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="M18.71 6C20.13 7.59 21 9.69 21 12c0 4.97-4.03 9-9 9-2.31 0-4.41-.87-6-2.29L18.71 6zM3 12c0-4.97 4.03-9 9-9 2.31 0 4.41.87 6 2.29L5.29 18C3.87 16.41 3 14.31 3 12zm9-10c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z" fill-rule="evenodd"></path>
                                     </svg>
                                     <span class="text-[8px]">Không quan tâm</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <g>
                                             <path d="M12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm7 11H5v-2h14v2z"></path>
                                         </g>
@@ -258,35 +279,35 @@
                                     <span class="text-[8px]">Không đề xuất kênh này</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
                                     </svg>
                                     <span class="text-[8px]">Báo vi phạm</span>
                                 </div>
-            
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="video-item col-span-1 flex m-2 space-x-2">
-                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94"/>
+                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94" />
                     <div class="group flex w-[100%]">
                         <div class="w-[calc(100%)] cursor-pointer">
                             <div class="line-clamp-2 overflow-hidden mb-1 text-[14px]">
                                 Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                                 Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                             </div>
-                            <div class="text-[#606060] text-[12px]">Bản tình ca</div>
+                            <div class="text-[#606060] text-[12px]">Một Bản Tình Ca</div>
                             <div class="text-[#606060] text-[12px]">
                                 1,2 triệu lượt xem • 8 tuần trước
                             </div>
                         </div>
-            
+
                         <div class="video-actions relative">
                             <svg class="button-dropdown block ml-[1px] cursor-pointer active:bg-slate-400 rounded-full p-[5px]" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                 <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
                             </svg>
-            
+
                             <div class="dropdown absolute hidden bg-white right-5">
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
@@ -313,13 +334,13 @@
                                     <span class="text-[8px]">Chia sẻ</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer mt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="M18.71 6C20.13 7.59 21 9.69 21 12c0 4.97-4.03 9-9 9-2.31 0-4.41-.87-6-2.29L18.71 6zM3 12c0-4.97 4.03-9 9-9 2.31 0 4.41.87 6 2.29L5.29 18C3.87 16.41 3 14.31 3 12zm9-10c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z" fill-rule="evenodd"></path>
                                     </svg>
                                     <span class="text-[8px]">Không quan tâm</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <g>
                                             <path d="M12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm7 11H5v-2h14v2z"></path>
                                         </g>
@@ -327,35 +348,35 @@
                                     <span class="text-[8px]">Không đề xuất kênh này</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
                                     </svg>
                                     <span class="text-[8px]">Báo vi phạm</span>
                                 </div>
-            
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="video-item col-span-1 flex m-2 space-x-2">
-                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94"/>
+                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94" />
                     <div class="group flex w-[100%]">
                         <div class="w-[calc(100%)] cursor-pointer">
                             <div class="line-clamp-2 overflow-hidden mb-1 text-[14px]">
                                 Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                                 Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                             </div>
-                            <div class="text-[#606060] text-[12px]">Bản tình ca</div>
+                            <div class="text-[#606060] text-[12px]">Một Bản Tình Ca</div>
                             <div class="text-[#606060] text-[12px]">
                                 1,2 triệu lượt xem • 8 tuần trước
                             </div>
                         </div>
-            
+
                         <div class="video-actions relative">
                             <svg class="button-dropdown block ml-[1px] cursor-pointer active:bg-slate-400 rounded-full p-[5px]" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                 <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
                             </svg>
-            
+
                             <div class="dropdown absolute hidden bg-white right-5">
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
@@ -382,13 +403,13 @@
                                     <span class="text-[8px]">Chia sẻ</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer mt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="M18.71 6C20.13 7.59 21 9.69 21 12c0 4.97-4.03 9-9 9-2.31 0-4.41-.87-6-2.29L18.71 6zM3 12c0-4.97 4.03-9 9-9 2.31 0 4.41.87 6 2.29L5.29 18C3.87 16.41 3 14.31 3 12zm9-10c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z" fill-rule="evenodd"></path>
                                     </svg>
                                     <span class="text-[8px]">Không quan tâm</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <g>
                                             <path d="M12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm7 11H5v-2h14v2z"></path>
                                         </g>
@@ -396,35 +417,35 @@
                                     <span class="text-[8px]">Không đề xuất kênh này</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
                                     </svg>
                                     <span class="text-[8px]">Báo vi phạm</span>
                                 </div>
-            
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="video-item col-span-1 flex m-2 space-x-2">
-                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94"/>
+                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94" />
                     <div class="group flex w-[100%]">
                         <div class="w-[calc(100%)] cursor-pointer">
                             <div class="line-clamp-2 overflow-hidden mb-1 text-[14px]">
                                 Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                                 Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                             </div>
-                            <div class="text-[#606060] text-[12px]">Bản tình ca</div>
+                            <div class="text-[#606060] text-[12px]">Một Bản Tình Ca</div>
                             <div class="text-[#606060] text-[12px]">
                                 1,2 triệu lượt xem • 8 tuần trước
                             </div>
                         </div>
-            
+
                         <div class="video-actions relative">
                             <svg class="button-dropdown block ml-[1px] cursor-pointer active:bg-slate-400 rounded-full p-[5px]" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                 <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
                             </svg>
-            
+
                             <div class="dropdown absolute hidden bg-white right-5">
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
@@ -451,13 +472,13 @@
                                     <span class="text-[8px]">Chia sẻ</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer mt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="M18.71 6C20.13 7.59 21 9.69 21 12c0 4.97-4.03 9-9 9-2.31 0-4.41-.87-6-2.29L18.71 6zM3 12c0-4.97 4.03-9 9-9 2.31 0 4.41.87 6 2.29L5.29 18C3.87 16.41 3 14.31 3 12zm9-10c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z" fill-rule="evenodd"></path>
                                     </svg>
                                     <span class="text-[8px]">Không quan tâm</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <g>
                                             <path d="M12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm7 11H5v-2h14v2z"></path>
                                         </g>
@@ -465,35 +486,35 @@
                                     <span class="text-[8px]">Không đề xuất kênh này</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
                                     </svg>
                                     <span class="text-[8px]">Báo vi phạm</span>
                                 </div>
-            
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="video-item col-span-1 flex m-2 space-x-2">
-                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94"/>
+                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94" />
                     <div class="group flex w-[100%]">
                         <div class="w-[calc(100%)] cursor-pointer">
                             <div class="line-clamp-2 overflow-hidden mb-1 text-[14px]">
                                 Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                                 Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                             </div>
-                            <div class="text-[#606060] text-[12px]">Bản tình ca</div>
+                            <div class="text-[#606060] text-[12px]">Một Bản Tình Ca</div>
                             <div class="text-[#606060] text-[12px]">
                                 1,2 triệu lượt xem • 8 tuần trước
                             </div>
                         </div>
-            
+
                         <div class="video-actions relative">
                             <svg class="button-dropdown block ml-[1px] cursor-pointer active:bg-slate-400 rounded-full p-[5px]" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                 <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
                             </svg>
-            
+
                             <div class="dropdown absolute hidden bg-white right-5">
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
@@ -520,13 +541,13 @@
                                     <span class="text-[8px]">Chia sẻ</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer mt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="M18.71 6C20.13 7.59 21 9.69 21 12c0 4.97-4.03 9-9 9-2.31 0-4.41-.87-6-2.29L18.71 6zM3 12c0-4.97 4.03-9 9-9 2.31 0 4.41.87 6 2.29L5.29 18C3.87 16.41 3 14.31 3 12zm9-10c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z" fill-rule="evenodd"></path>
                                     </svg>
                                     <span class="text-[8px]">Không quan tâm</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <g>
                                             <path d="M12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm7 11H5v-2h14v2z"></path>
                                         </g>
@@ -534,35 +555,35 @@
                                     <span class="text-[8px]">Không đề xuất kênh này</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
                                     </svg>
                                     <span class="text-[8px]">Báo vi phạm</span>
                                 </div>
-            
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="video-item col-span-1 flex m-2 space-x-2">
-                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94"/>
+                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94" />
                     <div class="group flex w-[100%]">
                         <div class="w-[calc(100%)] cursor-pointer">
                             <div class="line-clamp-2 overflow-hidden mb-1 text-[14px]">
                                 Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                                 Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                             </div>
-                            <div class="text-[#606060] text-[12px]">Bản tình ca</div>
+                            <div class="text-[#606060] text-[12px]">Một Bản Tình Ca</div>
                             <div class="text-[#606060] text-[12px]">
                                 1,2 triệu lượt xem • 8 tuần trước
                             </div>
                         </div>
-            
+
                         <div class="video-actions relative">
                             <svg class="button-dropdown block ml-[1px] cursor-pointer active:bg-slate-400 rounded-full p-[5px]" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                 <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
                             </svg>
-            
+
                             <div class="dropdown absolute hidden bg-white right-5">
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
@@ -589,13 +610,13 @@
                                     <span class="text-[8px]">Chia sẻ</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer mt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="M18.71 6C20.13 7.59 21 9.69 21 12c0 4.97-4.03 9-9 9-2.31 0-4.41-.87-6-2.29L18.71 6zM3 12c0-4.97 4.03-9 9-9 2.31 0 4.41.87 6 2.29L5.29 18C3.87 16.41 3 14.31 3 12zm9-10c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z" fill-rule="evenodd"></path>
                                     </svg>
                                     <span class="text-[8px]">Không quan tâm</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <g>
                                             <path d="M12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm7 11H5v-2h14v2z"></path>
                                         </g>
@@ -603,35 +624,35 @@
                                     <span class="text-[8px]">Không đề xuất kênh này</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
                                     </svg>
                                     <span class="text-[8px]">Báo vi phạm</span>
                                 </div>
-            
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="video-item col-span-1 flex m-2 space-x-2">
-                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94"/>
+                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94" />
                     <div class="group flex w-[100%]">
                         <div class="w-[calc(100%)] cursor-pointer">
                             <div class="line-clamp-2 overflow-hidden mb-1 text-[14px]">
                                 Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                                 Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                             </div>
-                            <div class="text-[#606060] text-[12px]">Bản tình ca</div>
+                            <div class="text-[#606060] text-[12px]">Một Bản Tình Ca</div>
                             <div class="text-[#606060] text-[12px]">
                                 1,2 triệu lượt xem • 8 tuần trước
                             </div>
                         </div>
-            
+
                         <div class="video-actions relative">
                             <svg class="button-dropdown block ml-[1px] cursor-pointer active:bg-slate-400 rounded-full p-[5px]" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                 <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
                             </svg>
-            
+
                             <div class="dropdown absolute hidden bg-white right-5">
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
@@ -658,13 +679,13 @@
                                     <span class="text-[8px]">Chia sẻ</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer mt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="M18.71 6C20.13 7.59 21 9.69 21 12c0 4.97-4.03 9-9 9-2.31 0-4.41-.87-6-2.29L18.71 6zM3 12c0-4.97 4.03-9 9-9 2.31 0 4.41.87 6 2.29L5.29 18C3.87 16.41 3 14.31 3 12zm9-10c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z" fill-rule="evenodd"></path>
                                     </svg>
                                     <span class="text-[8px]">Không quan tâm</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <g>
                                             <path d="M12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm7 11H5v-2h14v2z"></path>
                                         </g>
@@ -672,35 +693,35 @@
                                     <span class="text-[8px]">Không đề xuất kênh này</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
                                     </svg>
                                     <span class="text-[8px]">Báo vi phạm</span>
                                 </div>
-            
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="video-item col-span-1 flex m-2 space-x-2">
-                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94"/>
+                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94" />
                     <div class="group flex w-[100%]">
                         <div class="w-[calc(100%)] cursor-pointer">
                             <div class="line-clamp-2 overflow-hidden mb-1 text-[14px]">
                                 Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                                 Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                             </div>
-                            <div class="text-[#606060] text-[12px]">Bản tình ca</div>
+                            <div class="text-[#606060] text-[12px]">Một Bản Tình Ca</div>
                             <div class="text-[#606060] text-[12px]">
                                 1,2 triệu lượt xem • 8 tuần trước
                             </div>
                         </div>
-            
+
                         <div class="video-actions relative">
                             <svg class="button-dropdown block ml-[1px] cursor-pointer active:bg-slate-400 rounded-full p-[5px]" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                 <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
                             </svg>
-            
+
                             <div class="dropdown absolute hidden bg-white right-5">
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
@@ -727,13 +748,13 @@
                                     <span class="text-[8px]">Chia sẻ</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer mt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="M18.71 6C20.13 7.59 21 9.69 21 12c0 4.97-4.03 9-9 9-2.31 0-4.41-.87-6-2.29L18.71 6zM3 12c0-4.97 4.03-9 9-9 2.31 0 4.41.87 6 2.29L5.29 18C3.87 16.41 3 14.31 3 12zm9-10c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z" fill-rule="evenodd"></path>
                                     </svg>
                                     <span class="text-[8px]">Không quan tâm</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <g>
                                             <path d="M12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm7 11H5v-2h14v2z"></path>
                                         </g>
@@ -741,35 +762,35 @@
                                     <span class="text-[8px]">Không đề xuất kênh này</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
                                     </svg>
                                     <span class="text-[8px]">Báo vi phạm</span>
                                 </div>
-            
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="video-item col-span-1 flex m-2 space-x-2">
-                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94"/>
+                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94" />
                     <div class="group flex w-[100%]">
                         <div class="w-[calc(100%)] cursor-pointer">
                             <div class="line-clamp-2 overflow-hidden mb-1 text-[14px]">
                                 Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                                 Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                             </div>
-                            <div class="text-[#606060] text-[12px]">Bản tình ca</div>
+                            <div class="text-[#606060] text-[12px]">Một Bản Tình Ca</div>
                             <div class="text-[#606060] text-[12px]">
                                 1,2 triệu lượt xem • 8 tuần trước
                             </div>
                         </div>
-            
+
                         <div class="video-actions relative">
                             <svg class="button-dropdown block ml-[1px] cursor-pointer active:bg-slate-400 rounded-full p-[5px]" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                 <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
                             </svg>
-            
+
                             <div class="dropdown absolute hidden bg-white right-5">
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
@@ -796,13 +817,13 @@
                                     <span class="text-[8px]">Chia sẻ</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer mt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="M18.71 6C20.13 7.59 21 9.69 21 12c0 4.97-4.03 9-9 9-2.31 0-4.41-.87-6-2.29L18.71 6zM3 12c0-4.97 4.03-9 9-9 2.31 0 4.41.87 6 2.29L5.29 18C3.87 16.41 3 14.31 3 12zm9-10c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z" fill-rule="evenodd"></path>
                                     </svg>
                                     <span class="text-[8px]">Không quan tâm</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <g>
                                             <path d="M12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm7 11H5v-2h14v2z"></path>
                                         </g>
@@ -810,35 +831,35 @@
                                     <span class="text-[8px]">Không đề xuất kênh này</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
                                     </svg>
                                     <span class="text-[8px]">Báo vi phạm</span>
                                 </div>
-            
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="video-item col-span-1 flex m-2 space-x-2">
-                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94"/>
+                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94" />
                     <div class="group flex w-[100%]">
                         <div class="w-[calc(100%)] cursor-pointer">
                             <div class="line-clamp-2 overflow-hidden mb-1 text-[14px]">
                                 Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                                 Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                             </div>
-                            <div class="text-[#606060] text-[12px]">Bản tình ca</div>
+                            <div class="text-[#606060] text-[12px]">Một Bản Tình Ca</div>
                             <div class="text-[#606060] text-[12px]">
                                 1,2 triệu lượt xem • 8 tuần trước
                             </div>
                         </div>
-            
+
                         <div class="video-actions relative">
                             <svg class="button-dropdown block ml-[1px] cursor-pointer active:bg-slate-400 rounded-full p-[5px]" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                 <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
                             </svg>
-            
+
                             <div class="dropdown absolute hidden bg-white right-5">
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
@@ -865,13 +886,13 @@
                                     <span class="text-[8px]">Chia sẻ</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer mt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="M18.71 6C20.13 7.59 21 9.69 21 12c0 4.97-4.03 9-9 9-2.31 0-4.41-.87-6-2.29L18.71 6zM3 12c0-4.97 4.03-9 9-9 2.31 0 4.41.87 6 2.29L5.29 18C3.87 16.41 3 14.31 3 12zm9-10c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z" fill-rule="evenodd"></path>
                                     </svg>
                                     <span class="text-[8px]">Không quan tâm</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <g>
                                             <path d="M12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm7 11H5v-2h14v2z"></path>
                                         </g>
@@ -879,35 +900,35 @@
                                     <span class="text-[8px]">Không đề xuất kênh này</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
                                     </svg>
                                     <span class="text-[8px]">Báo vi phạm</span>
                                 </div>
-            
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="video-item col-span-1 flex m-2 space-x-2">
-                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94"/>
+                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94" />
                     <div class="group flex w-[100%]">
                         <div class="w-[calc(100%)] cursor-pointer">
                             <div class="line-clamp-2 overflow-hidden mb-1 text-[14px]">
                                 Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                                 Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                             </div>
-                            <div class="text-[#606060] text-[12px]">Bản tình ca</div>
+                            <div class="text-[#606060] text-[12px]">Một Bản Tình Ca</div>
                             <div class="text-[#606060] text-[12px]">
                                 1,2 triệu lượt xem • 8 tuần trước
                             </div>
                         </div>
-            
+
                         <div class="video-actions relative">
                             <svg class="button-dropdown block ml-[1px] cursor-pointer active:bg-slate-400 rounded-full p-[5px]" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                 <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
                             </svg>
-            
+
                             <div class="dropdown absolute hidden bg-white right-5">
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
@@ -934,13 +955,13 @@
                                     <span class="text-[8px]">Chia sẻ</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer mt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="M18.71 6C20.13 7.59 21 9.69 21 12c0 4.97-4.03 9-9 9-2.31 0-4.41-.87-6-2.29L18.71 6zM3 12c0-4.97 4.03-9 9-9 2.31 0 4.41.87 6 2.29L5.29 18C3.87 16.41 3 14.31 3 12zm9-10c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z" fill-rule="evenodd"></path>
                                     </svg>
                                     <span class="text-[8px]">Không quan tâm</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <g>
                                             <path d="M12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm7 11H5v-2h14v2z"></path>
                                         </g>
@@ -948,35 +969,35 @@
                                     <span class="text-[8px]">Không đề xuất kênh này</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
                                     </svg>
                                     <span class="text-[8px]">Báo vi phạm</span>
                                 </div>
-            
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="video-item col-span-1 flex m-2 space-x-2">
-                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94"/>
+                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94" />
                     <div class="group flex w-[100%]">
                         <div class="w-[calc(100%)] cursor-pointer">
                             <div class="line-clamp-2 overflow-hidden mb-1 text-[14px]">
                                 Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                                 Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                             </div>
-                            <div class="text-[#606060] text-[12px]">Bản tình ca</div>
+                            <div class="text-[#606060] text-[12px]">Một Bản Tình Ca</div>
                             <div class="text-[#606060] text-[12px]">
                                 1,2 triệu lượt xem • 8 tuần trước
                             </div>
                         </div>
-            
+
                         <div class="video-actions relative">
                             <svg class="button-dropdown block ml-[1px] cursor-pointer active:bg-slate-400 rounded-full p-[5px]" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                 <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
                             </svg>
-            
+
                             <div class="dropdown absolute hidden bg-white right-5">
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
@@ -1003,13 +1024,13 @@
                                     <span class="text-[8px]">Chia sẻ</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer mt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="M18.71 6C20.13 7.59 21 9.69 21 12c0 4.97-4.03 9-9 9-2.31 0-4.41-.87-6-2.29L18.71 6zM3 12c0-4.97 4.03-9 9-9 2.31 0 4.41.87 6 2.29L5.29 18C3.87 16.41 3 14.31 3 12zm9-10c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z" fill-rule="evenodd"></path>
                                     </svg>
                                     <span class="text-[8px]">Không quan tâm</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <g>
                                             <path d="M12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm7 11H5v-2h14v2z"></path>
                                         </g>
@@ -1017,35 +1038,35 @@
                                     <span class="text-[8px]">Không đề xuất kênh này</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
                                     </svg>
                                     <span class="text-[8px]">Báo vi phạm</span>
                                 </div>
-            
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="video-item col-span-1 flex m-2 space-x-2">
-                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94"/>
+                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94" />
                     <div class="group flex w-[100%]">
                         <div class="w-[calc(100%)] cursor-pointer">
                             <div class="line-clamp-2 overflow-hidden mb-1 text-[14px]">
                                 Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                                 Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                             </div>
-                            <div class="text-[#606060] text-[12px]">Bản tình ca</div>
+                            <div class="text-[#606060] text-[12px]">Một Bản Tình Ca</div>
                             <div class="text-[#606060] text-[12px]">
                                 1,2 triệu lượt xem • 8 tuần trước
                             </div>
                         </div>
-            
+
                         <div class="video-actions relative">
                             <svg class="button-dropdown block ml-[1px] cursor-pointer active:bg-slate-400 rounded-full p-[5px]" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                 <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
                             </svg>
-            
+
                             <div class="dropdown absolute hidden bg-white right-5">
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
@@ -1072,13 +1093,13 @@
                                     <span class="text-[8px]">Chia sẻ</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer mt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="M18.71 6C20.13 7.59 21 9.69 21 12c0 4.97-4.03 9-9 9-2.31 0-4.41-.87-6-2.29L18.71 6zM3 12c0-4.97 4.03-9 9-9 2.31 0 4.41.87 6 2.29L5.29 18C3.87 16.41 3 14.31 3 12zm9-10c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z" fill-rule="evenodd"></path>
                                     </svg>
                                     <span class="text-[8px]">Không quan tâm</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <g>
                                             <path d="M12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm7 11H5v-2h14v2z"></path>
                                         </g>
@@ -1086,35 +1107,35 @@
                                     <span class="text-[8px]">Không đề xuất kênh này</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
                                     </svg>
                                     <span class="text-[8px]">Báo vi phạm</span>
                                 </div>
-            
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="video-item col-span-1 flex m-2 space-x-2">
-                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94"/>
+                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94" />
                     <div class="group flex w-[100%]">
                         <div class="w-[calc(100%)] cursor-pointer">
                             <div class="line-clamp-2 overflow-hidden mb-1 text-[14px]">
                                 Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                                 Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                             </div>
-                            <div class="text-[#606060] text-[12px]">Bản tình ca</div>
+                            <div class="text-[#606060] text-[12px]">Một Bản Tình Ca</div>
                             <div class="text-[#606060] text-[12px]">
                                 1,2 triệu lượt xem • 8 tuần trước
                             </div>
                         </div>
-            
+
                         <div class="video-actions relative">
                             <svg class="button-dropdown block ml-[1px] cursor-pointer active:bg-slate-400 rounded-full p-[5px]" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                 <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
                             </svg>
-            
+
                             <div class="dropdown absolute hidden bg-white right-5">
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
@@ -1141,13 +1162,13 @@
                                     <span class="text-[8px]">Chia sẻ</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer mt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="M18.71 6C20.13 7.59 21 9.69 21 12c0 4.97-4.03 9-9 9-2.31 0-4.41-.87-6-2.29L18.71 6zM3 12c0-4.97 4.03-9 9-9 2.31 0 4.41.87 6 2.29L5.29 18C3.87 16.41 3 14.31 3 12zm9-10c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z" fill-rule="evenodd"></path>
                                     </svg>
                                     <span class="text-[8px]">Không quan tâm</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <g>
                                             <path d="M12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm7 11H5v-2h14v2z"></path>
                                         </g>
@@ -1155,35 +1176,35 @@
                                     <span class="text-[8px]">Không đề xuất kênh này</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
                                     </svg>
                                     <span class="text-[8px]">Báo vi phạm</span>
                                 </div>
-            
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="video-item col-span-1 flex m-2 space-x-2">
-                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94"/>
+                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94" />
                     <div class="group flex w-[100%]">
                         <div class="w-[calc(100%)] cursor-pointer">
                             <div class="line-clamp-2 overflow-hidden mb-1 text-[14px]">
                                 Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                                 Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                             </div>
-                            <div class="text-[#606060] text-[12px]">Bản tình ca</div>
+                            <div class="text-[#606060] text-[12px]">Một Bản Tình Ca</div>
                             <div class="text-[#606060] text-[12px]">
                                 1,2 triệu lượt xem • 8 tuần trước
                             </div>
                         </div>
-            
+
                         <div class="video-actions relative">
                             <svg class="button-dropdown block ml-[1px] cursor-pointer active:bg-slate-400 rounded-full p-[5px]" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                 <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
                             </svg>
-            
+
                             <div class="dropdown absolute hidden bg-white right-5">
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
@@ -1210,13 +1231,13 @@
                                     <span class="text-[8px]">Chia sẻ</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer mt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="M18.71 6C20.13 7.59 21 9.69 21 12c0 4.97-4.03 9-9 9-2.31 0-4.41-.87-6-2.29L18.71 6zM3 12c0-4.97 4.03-9 9-9 2.31 0 4.41.87 6 2.29L5.29 18C3.87 16.41 3 14.31 3 12zm9-10c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z" fill-rule="evenodd"></path>
                                     </svg>
                                     <span class="text-[8px]">Không quan tâm</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <g>
                                             <path d="M12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm7 11H5v-2h14v2z"></path>
                                         </g>
@@ -1224,35 +1245,35 @@
                                     <span class="text-[8px]">Không đề xuất kênh này</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
                                     </svg>
                                     <span class="text-[8px]">Báo vi phạm</span>
                                 </div>
-            
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="video-item col-span-1 flex m-2 space-x-2">
-                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94"/>
+                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94" />
                     <div class="group flex w-[100%]">
                         <div class="w-[calc(100%)] cursor-pointer">
                             <div class="line-clamp-2 overflow-hidden mb-1 text-[14px]">
                                 Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                                 Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                             </div>
-                            <div class="text-[#606060] text-[12px]">Bản tình ca</div>
+                            <div class="text-[#606060] text-[12px]">Một Bản Tình Ca</div>
                             <div class="text-[#606060] text-[12px]">
                                 1,2 triệu lượt xem • 8 tuần trước
                             </div>
                         </div>
-            
+
                         <div class="video-actions relative">
                             <svg class="button-dropdown block ml-[1px] cursor-pointer active:bg-slate-400 rounded-full p-[5px]" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                 <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
                             </svg>
-            
+
                             <div class="dropdown absolute hidden bg-white right-5">
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
@@ -1279,13 +1300,13 @@
                                     <span class="text-[8px]">Chia sẻ</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer mt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="M18.71 6C20.13 7.59 21 9.69 21 12c0 4.97-4.03 9-9 9-2.31 0-4.41-.87-6-2.29L18.71 6zM3 12c0-4.97 4.03-9 9-9 2.31 0 4.41.87 6 2.29L5.29 18C3.87 16.41 3 14.31 3 12zm9-10c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z" fill-rule="evenodd"></path>
                                     </svg>
                                     <span class="text-[8px]">Không quan tâm</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <g>
                                             <path d="M12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm7 11H5v-2h14v2z"></path>
                                         </g>
@@ -1293,35 +1314,35 @@
                                     <span class="text-[8px]">Không đề xuất kênh này</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
                                     </svg>
                                     <span class="text-[8px]">Báo vi phạm</span>
                                 </div>
-            
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="video-item col-span-1 flex m-2 space-x-2">
-                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94"/>
+                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94" />
                     <div class="group flex w-[100%]">
                         <div class="w-[calc(100%)] cursor-pointer">
                             <div class="line-clamp-2 overflow-hidden mb-1 text-[14px]">
                                 Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                                 Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                             </div>
-                            <div class="text-[#606060] text-[12px]">Bản tình ca</div>
+                            <div class="text-[#606060] text-[12px]">Một Bản Tình Ca</div>
                             <div class="text-[#606060] text-[12px]">
                                 1,2 triệu lượt xem • 8 tuần trước
                             </div>
                         </div>
-            
+
                         <div class="video-actions relative">
                             <svg class="button-dropdown block ml-[1px] cursor-pointer active:bg-slate-400 rounded-full p-[5px]" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                 <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
                             </svg>
-            
+
                             <div class="dropdown absolute hidden bg-white right-5">
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
@@ -1348,13 +1369,13 @@
                                     <span class="text-[8px]">Chia sẻ</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer mt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="M18.71 6C20.13 7.59 21 9.69 21 12c0 4.97-4.03 9-9 9-2.31 0-4.41-.87-6-2.29L18.71 6zM3 12c0-4.97 4.03-9 9-9 2.31 0 4.41.87 6 2.29L5.29 18C3.87 16.41 3 14.31 3 12zm9-10c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z" fill-rule="evenodd"></path>
                                     </svg>
                                     <span class="text-[8px]">Không quan tâm</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <g>
                                             <path d="M12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm7 11H5v-2h14v2z"></path>
                                         </g>
@@ -1362,35 +1383,35 @@
                                     <span class="text-[8px]">Không đề xuất kênh này</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
                                     </svg>
                                     <span class="text-[8px]">Báo vi phạm</span>
                                 </div>
-            
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="video-item col-span-1 flex m-2 space-x-2">
-                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94"/>
+                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94" />
                     <div class="group flex w-[100%]">
                         <div class="w-[calc(100%)] cursor-pointer">
                             <div class="line-clamp-2 overflow-hidden mb-1 text-[14px]">
                                 Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                                 Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                             </div>
-                            <div class="text-[#606060] text-[12px]">Bản tình ca</div>
+                            <div class="text-[#606060] text-[12px]">Một Bản Tình Ca</div>
                             <div class="text-[#606060] text-[12px]">
                                 1,2 triệu lượt xem • 8 tuần trước
                             </div>
                         </div>
-            
+
                         <div class="video-actions relative">
                             <svg class="button-dropdown block ml-[1px] cursor-pointer active:bg-slate-400 rounded-full p-[5px]" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                 <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
                             </svg>
-            
+
                             <div class="dropdown absolute hidden bg-white right-5">
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
@@ -1417,13 +1438,13 @@
                                     <span class="text-[8px]">Chia sẻ</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer mt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="M18.71 6C20.13 7.59 21 9.69 21 12c0 4.97-4.03 9-9 9-2.31 0-4.41-.87-6-2.29L18.71 6zM3 12c0-4.97 4.03-9 9-9 2.31 0 4.41.87 6 2.29L5.29 18C3.87 16.41 3 14.31 3 12zm9-10c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z" fill-rule="evenodd"></path>
                                     </svg>
                                     <span class="text-[8px]">Không quan tâm</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <g>
                                             <path d="M12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm7 11H5v-2h14v2z"></path>
                                         </g>
@@ -1431,35 +1452,35 @@
                                     <span class="text-[8px]">Không đề xuất kênh này</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
                                     </svg>
                                     <span class="text-[8px]">Báo vi phạm</span>
                                 </div>
-            
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="video-item col-span-1 flex m-2 space-x-2">
-                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94"/>
+                    <img class="rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" width="168" height="94" />
                     <div class="group flex w-[100%]">
                         <div class="w-[calc(100%)] cursor-pointer">
                             <div class="line-clamp-2 overflow-hidden mb-1 text-[14px]">
                                 Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                                 Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                             </div>
-                            <div class="text-[#606060] text-[12px]">Bản tình ca</div>
+                            <div class="text-[#606060] text-[12px]">Một Bản Tình Ca</div>
                             <div class="text-[#606060] text-[12px]">
                                 1,2 triệu lượt xem • 8 tuần trước
                             </div>
                         </div>
-            
+
                         <div class="video-actions relative">
                             <svg class="button-dropdown block ml-[1px] cursor-pointer active:bg-slate-400 rounded-full p-[5px]" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                 <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
                             </svg>
-            
+
                             <div class="dropdown absolute hidden bg-white right-5">
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
@@ -1486,13 +1507,13 @@
                                     <span class="text-[8px]">Chia sẻ</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer mt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="M18.71 6C20.13 7.59 21 9.69 21 12c0 4.97-4.03 9-9 9-2.31 0-4.41-.87-6-2.29L18.71 6zM3 12c0-4.97 4.03-9 9-9 2.31 0 4.41.87 6 2.29L5.29 18C3.87 16.41 3 14.31 3 12zm9-10c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z" fill-rule="evenodd"></path>
                                     </svg>
                                     <span class="text-[8px]">Không quan tâm</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <g>
                                             <path d="M12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm7 11H5v-2h14v2z"></path>
                                         </g>
@@ -1500,12 +1521,12 @@
                                     <span class="text-[8px]">Không đề xuất kênh này</span>
                                 </div>
                                 <div class="w-[200px] flex space-x-2 items-center px-4 py-1 hover:bg-slate-300 cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                                         <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
                                     </svg>
                                     <span class="text-[8px]">Báo vi phạm</span>
                                 </div>
-            
+
                             </div>
                         </div>
                     </div>
@@ -1517,15 +1538,15 @@
         <div class="comments-wrapper flex flex-col space-y-4 mt-8">
             <div class="items-center flex space-x-4">
                 <span class="text-xl font-bold">222 bình luận</span>
-                <span class="relative">
-                    <div class="button-dropdown flex space-x-2 font-bold items-center cursor-pointer">
+                <span class="relative sort-comment">
+                    <div class="button-dropdown flex space-x-2 font-bold items-center cursor-pointer active:bg-slate-200">
                         <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                             <path d="M21 6H3V5h18v1zm-6 5H3v1h12v-1zm-6 6H3v1h6v-1z"></path>
                         </svg>
                         <span>Sắp xếp theo</span>
                     </div>
 
-                    <div class="dropdown absolute bg-white w-[160px] top-[35px] hidden">
+                    <div class="dropdown sort-comment-dropdown absolute bg-white w-[160px] top-[35px] hidden">
                         <div class="p-2 cursor-pointer hover:bg-slate-200 inline-block w-[100%]">Bình luận hàng đầu</div>
                         <div class="p-2 cursor-pointer hover:bg-slate-200 inline-block w-[100%]">Mới nhất xếp trước</div>
                     </div>

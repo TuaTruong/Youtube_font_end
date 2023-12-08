@@ -43,7 +43,7 @@
                     Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                     Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                 </div>
-                <div class="text-gray-500">Bản tình ca</div>
+                <div class="text-gray-500">Một Bản Tình Ca</div>
                 <div class="text-gray-500 text-[8px]">
                     1,2 triệu lượt xem • 8 tuần trước
                 </div>
@@ -115,7 +115,7 @@
                     Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                     Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                 </div>
-                <div class="text-gray-500">Bản tình ca</div>
+                <div class="text-gray-500">Một Bản Tình Ca</div>
                 <div class="text-gray-500 text-[8px]">
                     1,2 triệu lượt xem • 8 tuần trước
                 </div>
@@ -187,7 +187,7 @@
                     Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                     Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                 </div>
-                <div class="text-gray-500">Bản tình ca</div>
+                <div class="text-gray-500">Một Bản Tình Ca</div>
                 <div class="text-gray-500 text-[8px]">
                     1,2 triệu lượt xem • 8 tuần trước
                 </div>
@@ -258,7 +258,7 @@
                     Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                     Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                 </div>
-                <div class="text-gray-500">Bản tình ca</div>
+                <div class="text-gray-500">Một Bản Tình Ca</div>
                 <div class="text-gray-500 text-[8px]">
                     1,2 triệu lượt xem • 8 tuần trước
                 </div>
@@ -331,7 +331,7 @@
                     Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                     Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                 </div>
-                <div class="text-gray-500">Bản tình ca</div>
+                <div class="text-gray-500">Một Bản Tình Ca</div>
                 <div class="text-gray-500 text-[8px]">
                     1,2 triệu lượt xem • 8 tuần trước
                 </div>
@@ -403,7 +403,7 @@
                     Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                     Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                 </div>
-                <div class="text-gray-500">Bản tình ca</div>
+                <div class="text-gray-500">Một Bản Tình Ca</div>
                 <div class="text-gray-500 text-[8px]">
                     1,2 triệu lượt xem • 8 tuần trước
                 </div>
@@ -475,7 +475,7 @@
                     Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                     Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                 </div>
-                <div class="text-gray-500">Bản tình ca</div>
+                <div class="text-gray-500">Một Bản Tình Ca</div>
                 <div class="text-gray-500 text-[8px]">
                     1,2 triệu lượt xem • 8 tuần trước
                 </div>
@@ -547,7 +547,7 @@
                     Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                     Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                 </div>
-                <div class="text-gray-500">Bản tình ca</div>
+                <div class="text-gray-500">Một Bản Tình Ca</div>
                 <div class="text-gray-500 text-[8px]">
                     1,2 triệu lượt xem • 8 tuần trước
                 </div>
@@ -619,7 +619,7 @@
                     Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                     Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                 </div>
-                <div class="text-gray-500">Bản tình ca</div>
+                <div class="text-gray-500">Một Bản Tình Ca</div>
                 <div class="text-gray-500 text-[8px]">
                     1,2 triệu lượt xem • 8 tuần trước
                 </div>
@@ -675,7 +675,6 @@
                         </svg>
                         <span>Báo vi phạm</span>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -691,7 +690,7 @@
                     Từng Quen - Wren Evans, Sài Gòn Tôi Mưa, Xin Lỗi Vì Đã Yêu
                     Nhau.. Playlist Lofi Chill Hay Hot Tiktok
                 </div>
-                <div class="text-gray-500">Bản tình ca</div>
+                <div class="text-gray-500">Một Bản Tình Ca</div>
                 <div class="text-gray-500 text-[8px]">
                     1,2 triệu lượt xem • 8 tuần trước
                 </div>
