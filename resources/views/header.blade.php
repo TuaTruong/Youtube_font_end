@@ -1,6 +1,6 @@
 <div class="flex items-center justify-between">
     <!-- start header  -->
-    <div class="flex items-center start-header">
+    <div class="start-header flex items-center ">
         <i class="ti-menu p-4 cursor-pointer hover:bg-[#ccc] rounded-full"></i>
         <div class="cursor-pointer ytb-logo">
             <svg xmlns="http://www.w3.org/2000/svg" class="external-icon" viewBox="0 0 90 20" focusable="false"
