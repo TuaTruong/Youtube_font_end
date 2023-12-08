@@ -47,7 +47,7 @@
 
 <body class="h-screen">
     <!-- HEADER  -->
-    <div class="header-wrapper fixed w-[100%] h-[62px] px-2 py-2 bg-white z-10 mr-1">
+    <div class="header-wrapper fixed w-[100%] h-[40px] sm:h-[62px] p-1 sm:p-2 bg-white z-10 mr-1">
         @include("header")
     </div>
     <!-- END HEADER  -->
@@ -130,7 +130,7 @@
     <!-- End sidebar -->
 
 
-    <div class="content-wrapper px-[10px] sm:ml-[80px] sm:w-[calc(100%-80px)] w-[100%] xl:ml-[250px] xl:w-[calc(100%-250px)] mt-[80px]" style="display: inline-block">
+    <div class="content-wrapper px-[10px] sm:ml-[80px] sm:w-[calc(100%-80px)] w-[100%] xl:ml-[250px] xl:w-[calc(100%-250px)] mt-[40px] sm:mt-[80px]" style="display: inline-block">
         @include("home-content")
     </div>
 

@@ -1,7 +1,7 @@
 <div class="flex items-center justify-between">
     <!-- start header  -->
     <div class="start-header flex items-center ">
-        <i class="ti-menu p-4 cursor-pointer hover:bg-[#ccc] rounded-full"></i>
+        <i class="ti-menu p-2 sm:p-4 cursor-pointer hover:bg-[#ccc] rounded-full"></i>
         <div class="cursor-pointer ytb-logo">
             <svg xmlns="http://www.w3.org/2000/svg" class="external-icon" viewBox="0 0 90 20" focusable="false"
                 width="90" height="20" class="inline">
@@ -44,41 +44,41 @@
 
     <!-- Center header  -->
     <div class="center-header items-center justify-center mx-auto container hidden sm:inline-flex flex">
-        <button class="back-btn hidden py-3 px-4 rounded-full bg-[#f8f8f8] cursor-pointer hover:bg-[#ccc] mr-4">
+        <button class="back-btn hidden py-1 px-2 sm:py-3 sm:px-4 rounded-full bg-[#f8f8f8] cursor-pointer hover:bg-[#ccc] mr-4">
             <i class="ti-arrow-left"></i>
         </button>
 
-        <div class="flex w-[70%]">
-            <div class="input-search-bar p-3 space-x-2 border rounded-l-full w-[100%]">
-                <i class="ti-search"></i>
+        <div class="flex w-[80%] items-center">
+            <div class="input-search-bar p-1 sm:p-3 space-x-0 sm:space-x-2 border rounded-l-full w-[100%]">
+                <i class="ti-search w-[10x] h-[10px] sm:w-[16px] sm:h-[16px]"></i>
                 <input name="search" type="text" class="border-0 w-[calc(100%-60px)] outline-none"
                     placeholder="Tìm kiếm" />
                 <img src="{{asset('img/keyboard.png')}}" class="inline cursor-pointer">
             </div>
 
             <button
-                class="w-[30%] min-w-[50px] max-w-[80px] h-[50.47px] bg-[#f8f8f8f8] rounded-r-full mr-4 hover:bg-[#ccc]">
+                class="sm:w-[30%] min-w-[30px] sm:min-w-[50px] sm:max-w-[80px] h-[34px] sm:h-[50.47px] bg-[#f8f8f8f8] rounded-r-full mr-4 hover:bg-[#ccc]">
                 <i class="ti-search"></i>
             </button>
         </div>
 
-        <div class="py-3 px-3 rounded-full bg-[#f8f8f8] cursor-pointer hover:bg-[#ccc]">
+        <button class="p-1 sm:p-3 rounded-full bg-[#f8f8f8] cursor-pointer hover:bg-[#ccc]">
             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                 <path
                     d="M12 3c-1.66 0-3 1.37-3 3.07v5.86c0 1.7 1.34 3.07 3 3.07s3-1.37 3-3.07V6.07C15 4.37 13.66 3 12 3zm6.5 9h-1c0 3.03-2.47 5.5-5.5 5.5S6.5 15.03 6.5 12h-1c0 3.24 2.39 5.93 5.5 6.41V21h2v-2.59c3.11-.48 5.5-3.17 5.5-6.41z">
                 </path>
             </svg>
-        </div>
+        </button>
     </div>
 
     <!-- End header  -->
     <div class="end-header flex items-center font-serif text-sm header-end lg:space-x-2 xl:space-x-2 space-x-1">
         <div class="show-search-bar search-btn sm:hidden">
-            <i class="ti-search cursor-pointer hover:bg-[#ccc] py-4 px-4 rounded-full"></i>
+            <i class="ti-search cursor-pointer hover:bg-[#ccc] p-2 sm:p-4 rounded-full"></i>
         </div>
 
         <div class="microphone-btn sm:hidden">
-            <div class="py-3 px-3 rounded-full bg-[#f8f8f8] cursor-pointer hover:bg-[#ccc]">
+            <div class="p-1 sm:p-3 rounded-full bg-[#f8f8f8] cursor-pointer hover:bg-[#ccc]">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                     <path
                         d="M12 3c-1.66 0-3 1.37-3 3.07v5.86c0 1.7 1.34 3.07 3 3.07s3-1.37 3-3.07V6.07C15 4.37 13.66 3 12 3zm6.5 9h-1c0 3.03-2.47 5.5-5.5 5.5S6.5 15.03 6.5 12h-1c0 3.24 2.39 5.93 5.5 6.41V21h2v-2.59c3.11-.48 5.5-3.17 5.5-6.41z">
@@ -88,7 +88,7 @@
         </div>
 
         <div class="upload-wrapper relative">
-            <div class="group hover:bg-[#ccc] upload-btn rounded-full p-3 button-dropdown cursor-pointer relative">
+            <div class="group hover:bg-[#ccc] upload-btn rounded-full p-1 sm:p-3 button-dropdown cursor-pointer relative">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                     <path
                         d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z">
@@ -98,7 +98,7 @@
                 <span
                     class="group-hover:block hidden absolute text-[13px] text-center top-14 right-[50%] translate-x-[50%] bg-slate-400 py-1 px-2 rounded-[3px] arial-label">Tạo</span>
             </div>
-            <ul class="upload-dropdown dropdown absolute hidden w-40 mt-3 bg-white border ti-video-camera-dropdown">
+            <ul class="upload-dropdown dropdown absolute hidden w-40 mt-3 top-5 right-5 bg-white border ti-video-camera-dropdown">
                 <li class="flex space-x-2 items-center p-2 cursor-pointer hover:bg-[#f8f8f8]">
                     <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24"
                         viewBox="0 0 24 24" width="24" focusable="false">
@@ -130,7 +130,7 @@
         </div>
 
         <div class="notifications-wrapper relative">
-            <div class="group hover:bg-[#ccc] notification-button rounded-full p-3 button-dropdown cursor-pointer">
+            <div class="group hover:bg-[#ccc] notification-button rounded-full p-1 sm:p-3 button-dropdown cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24"
                     viewBox="0 0 24 24" width="24" focusable="false">
                     <path
@@ -142,26 +142,25 @@
                     báo</span>
             </div>
             <ul
-                class="dropdown absolute notification-dropdown hidden w-[430px] border bg-white top-8 right-8 max-h-[642px] overflow-y-auto">
-                <li class="flex justify-between p-4 items-center border-b-2">
+                class="dropdown absolute notification-dropdown hidden w-[260px] sm:w-[430px] border bg-white top-8 right-0 max-h-[642px] overflow-y-auto">
+                <li class="flex justify-between p-2 sm:p-4 items-center border-b-2">
                     <span>Thông báo</span>
                     <i class="ti-settings p-2 cursor-pointer hover:bg-[#ccc] rounded-full"></i>
                 </li>
 
-                <li class="notification-item flex py-4 pr-4 justify-between cursor-pointer hover:bg-[#f8f8f8]">
+                <li class="notification-item flex py-4 sm:pr-4 pr-2 justify-between cursor-pointer hover:bg-[#f8f8f8]">
                     <div class="w-[4px]"></div>
                     <div>
-                        <img width="48" height="48" src="{{asset('img/channel_profile.jpg')}}"
-                            class="rounded-full mr-2" />
+                        <img width="48" height="48" src="{{asset('img/channel_profile.jpg')}}" class="sm:w-[48px] sm:h-[48px] w-[30px] h-[30px] rounded-full mr-2" />
                     </div>
 
-                    <div class="max-w-[235px]">
+                    <div class="max-w-[130px] sm:max-w-[235px]">
                         <div class="flex flex-col space-y-1">
-                            <p class="text-[14px] font-sans">
+                            <p class="text-[9px] sm:text-[14px] font-sans">
                                 Tuyền Văn Hóa uploaded: TRƯƠNG MỸ LAN ĐÃ DÙNG TRÒ MA GIÁO
                                 NÀO ĐỂ RÚT 1 TRIỆU TỶ ĐỒNG TỪ NGÂN HÀNG SCB?
                             </p>
-                            <span>1 giờ trước</span>
+                            <span class="text-[10px]">1 giờ trước</span>
                         </div>
                     </div>
 
@@ -173,43 +172,41 @@
 
                         <i class="ti-more button-dropdown p-2 cursor-pointer hover:bg-[#ccc] rounded-full"></i>
                         <ul class="notification-item-dropdown dropdown absolute hidden right-5 bg-white">
-                            <li class="w-[350px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
+                            <li class="w-[200px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" width="24" height="24"
                                 viewBox="0 0 24 24" width="24" focusable="false">
                                     <path
                                         d="m3.85 3.15-.7.7L6.19 6.9C4.31 8.11 2.83 9.89 2 12c1.57 3.99 5.45 6.82 10 6.82 1.77 0 3.44-.43 4.92-1.2l3.23 3.23.71-.71L3.85 3.15zM13.8 14.5c-.51.37-1.13.59-1.8.59-1.7 0-3.09-1.39-3.09-3.09 0-.67.22-1.29.59-1.8l4.3 4.3zM12 17.82c-3.9 0-7.35-2.27-8.92-5.82.82-1.87 2.18-3.36 3.83-4.38L8.79 9.5c-.54.69-.88 1.56-.88 2.5 0 2.25 1.84 4.09 4.09 4.09.95 0 1.81-.34 2.5-.88l1.67 1.67c-1.27.61-2.69.94-4.17.94zm-.51-9.87c.17-.02.34-.05.51-.05 2.25 0 4.09 1.84 4.09 4.09 0 .17-.02.34-.05.51l-1.01-1.01c-.21-1.31-1.24-2.33-2.55-2.55l-.99-.99zM9.12 5.59c.92-.26 1.88-.41 2.88-.41 4.55 0 8.43 2.83 10 6.82-.58 1.47-1.48 2.78-2.61 3.85l-.72-.72c.93-.87 1.71-1.92 2.25-3.13C19.35 8.45 15.9 6.18 12 6.18c-.7 0-1.39.08-2.06.22l-.82-.81z">
                                     </path>
                                 </svg>
-                                <span class="">Ẩn thông báo này</span>
+                                <span class="text-[10px] sm:text-[14px]">Ẩn thông báo này</span>
                             </li>
-                            <li class="w-[350px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
+                            <li class="w-[200px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" width="24" height="24"
                                 viewBox="0 0 24 24" width="24" focusable="false">
                                     <path
                                         d="m3.85 3.15-.7.7L6.19 6.9C4.31 8.11 2.83 9.89 2 12c1.57 3.99 5.45 6.82 10 6.82 1.77 0 3.44-.43 4.92-1.2l3.23 3.23.71-.71L3.85 3.15zM13.8 14.5c-.51.37-1.13.59-1.8.59-1.7 0-3.09-1.39-3.09-3.09 0-.67.22-1.29.59-1.8l4.3 4.3zM12 17.82c-3.9 0-7.35-2.27-8.92-5.82.82-1.87 2.18-3.36 3.83-4.38L8.79 9.5c-.54.69-.88 1.56-.88 2.5 0 2.25 1.84 4.09 4.09 4.09.95 0 1.81-.34 2.5-.88l1.67 1.67c-1.27.61-2.69.94-4.17.94zm-.51-9.87c.17-.02.34-.05.51-.05 2.25 0 4.09 1.84 4.09 4.09 0 .17-.02.34-.05.51l-1.01-1.01c-.21-1.31-1.24-2.33-2.55-2.55l-.99-.99zM9.12 5.59c.92-.26 1.88-.41 2.88-.41 4.55 0 8.43 2.83 10 6.82-.58 1.47-1.48 2.78-2.61 3.85l-.72-.72c.93-.87 1.71-1.92 2.25-3.13C19.35 8.45 15.9 6.18 12 6.18c-.7 0-1.39.08-2.06.22l-.82-.81z">
                                     </path>
                                 </svg>
-                                <span class="">Tắt tất cả những thông báo từ Tuyền Văn Hóa</span>
+                                <span class="text-[10px] sm:text-[14px]">Tắt tất cả những thông báo từ Tuyền Văn Hóa</span>
                             </li>
 
                         </ul>
                     </div>
                 </li>
-
-                <li class="notification-item flex py-4 pr-4 justify-between cursor-pointer hover:bg-[#f8f8f8]">
+                <li class="notification-item flex py-4 sm:pr-4 pr-2 justify-between cursor-pointer hover:bg-[#f8f8f8]">
                     <div class="w-[4px]"></div>
                     <div>
-                        <img width="48" height="48" src="{{asset('img/channel_profile.jpg')}}"
-                            class="rounded-full mr-2" />
+                        <img width="48" height="48" src="{{asset('img/channel_profile.jpg')}}" class="sm:w-[48px] sm:h-[48px] w-[30px] h-[30px] rounded-full mr-2" />
                     </div>
 
-                    <div class="max-w-[235px]">
+                    <div class="max-w-[130px] sm:max-w-[235px]">
                         <div class="flex flex-col space-y-1">
-                            <p class="text-[14px] font-sans">
+                            <p class="text-[9px] sm:text-[14px] font-sans">
                                 Tuyền Văn Hóa uploaded: TRƯƠNG MỸ LAN ĐÃ DÙNG TRÒ MA GIÁO
                                 NÀO ĐỂ RÚT 1 TRIỆU TỶ ĐỒNG TỪ NGÂN HÀNG SCB?
                             </p>
-                            <span>1 giờ trước</span>
+                            <span class="text-[10px]">1 giờ trước</span>
                         </div>
                     </div>
 
@@ -218,45 +215,44 @@
                     </div>
 
                     <div class="relative">
+
                         <i class="ti-more button-dropdown p-2 cursor-pointer hover:bg-[#ccc] rounded-full"></i>
                         <ul class="notification-item-dropdown dropdown absolute hidden right-5 bg-white">
-                            <li class="w-[350px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
+                            <li class="w-[200px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" width="24" height="24"
                                 viewBox="0 0 24 24" width="24" focusable="false">
                                     <path
                                         d="m3.85 3.15-.7.7L6.19 6.9C4.31 8.11 2.83 9.89 2 12c1.57 3.99 5.45 6.82 10 6.82 1.77 0 3.44-.43 4.92-1.2l3.23 3.23.71-.71L3.85 3.15zM13.8 14.5c-.51.37-1.13.59-1.8.59-1.7 0-3.09-1.39-3.09-3.09 0-.67.22-1.29.59-1.8l4.3 4.3zM12 17.82c-3.9 0-7.35-2.27-8.92-5.82.82-1.87 2.18-3.36 3.83-4.38L8.79 9.5c-.54.69-.88 1.56-.88 2.5 0 2.25 1.84 4.09 4.09 4.09.95 0 1.81-.34 2.5-.88l1.67 1.67c-1.27.61-2.69.94-4.17.94zm-.51-9.87c.17-.02.34-.05.51-.05 2.25 0 4.09 1.84 4.09 4.09 0 .17-.02.34-.05.51l-1.01-1.01c-.21-1.31-1.24-2.33-2.55-2.55l-.99-.99zM9.12 5.59c.92-.26 1.88-.41 2.88-.41 4.55 0 8.43 2.83 10 6.82-.58 1.47-1.48 2.78-2.61 3.85l-.72-.72c.93-.87 1.71-1.92 2.25-3.13C19.35 8.45 15.9 6.18 12 6.18c-.7 0-1.39.08-2.06.22l-.82-.81z">
                                     </path>
                                 </svg>
-                                <span class="">Ẩn thông báo này</span>
+                                <span class="text-[10px] sm:text-[14px]">Ẩn thông báo này</span>
                             </li>
-                            <li class="w-[350px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
+                            <li class="w-[200px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" width="24" height="24"
                                 viewBox="0 0 24 24" width="24" focusable="false">
                                     <path
                                         d="m3.85 3.15-.7.7L6.19 6.9C4.31 8.11 2.83 9.89 2 12c1.57 3.99 5.45 6.82 10 6.82 1.77 0 3.44-.43 4.92-1.2l3.23 3.23.71-.71L3.85 3.15zM13.8 14.5c-.51.37-1.13.59-1.8.59-1.7 0-3.09-1.39-3.09-3.09 0-.67.22-1.29.59-1.8l4.3 4.3zM12 17.82c-3.9 0-7.35-2.27-8.92-5.82.82-1.87 2.18-3.36 3.83-4.38L8.79 9.5c-.54.69-.88 1.56-.88 2.5 0 2.25 1.84 4.09 4.09 4.09.95 0 1.81-.34 2.5-.88l1.67 1.67c-1.27.61-2.69.94-4.17.94zm-.51-9.87c.17-.02.34-.05.51-.05 2.25 0 4.09 1.84 4.09 4.09 0 .17-.02.34-.05.51l-1.01-1.01c-.21-1.31-1.24-2.33-2.55-2.55l-.99-.99zM9.12 5.59c.92-.26 1.88-.41 2.88-.41 4.55 0 8.43 2.83 10 6.82-.58 1.47-1.48 2.78-2.61 3.85l-.72-.72c.93-.87 1.71-1.92 2.25-3.13C19.35 8.45 15.9 6.18 12 6.18c-.7 0-1.39.08-2.06.22l-.82-.81z">
                                     </path>
                                 </svg>
-                                <span class="">Tắt tất cả những thông báo từ Tuyền Văn Hóa</span>
+                                <span class="text-[10px] sm:text-[14px]">Tắt tất cả những thông báo từ Tuyền Văn Hóa</span>
                             </li>
 
                         </ul>
                     </div>
                 </li>
-
-                <li class="notification-item flex py-4 pr-4 justify-between cursor-pointer hover:bg-[#f8f8f8]">
+                <li class="notification-item flex py-4 sm:pr-4 pr-2 justify-between cursor-pointer hover:bg-[#f8f8f8]">
                     <div class="w-[4px]"></div>
                     <div>
-                        <img width="48" height="48" src="{{asset('img/channel_profile.jpg')}}"
-                            class="rounded-full mr-2" />
+                        <img width="48" height="48" src="{{asset('img/channel_profile.jpg')}}" class="sm:w-[48px] sm:h-[48px] w-[30px] h-[30px] rounded-full mr-2" />
                     </div>
 
-                    <div class="max-w-[235px]">
+                    <div class="max-w-[130px] sm:max-w-[235px]">
                         <div class="flex flex-col space-y-1">
-                            <p class="text-[14px] font-sans">
+                            <p class="text-[9px] sm:text-[14px] font-sans">
                                 Tuyền Văn Hóa uploaded: TRƯƠNG MỸ LAN ĐÃ DÙNG TRÒ MA GIÁO
                                 NÀO ĐỂ RÚT 1 TRIỆU TỶ ĐỒNG TỪ NGÂN HÀNG SCB?
                             </p>
-                            <span>1 giờ trước</span>
+                            <span class="text-[10px]">1 giờ trước</span>
                         </div>
                     </div>
 
@@ -265,45 +261,44 @@
                     </div>
 
                     <div class="relative">
+
                         <i class="ti-more button-dropdown p-2 cursor-pointer hover:bg-[#ccc] rounded-full"></i>
                         <ul class="notification-item-dropdown dropdown absolute hidden right-5 bg-white">
-                            <li class="w-[350px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
+                            <li class="w-[200px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" width="24" height="24"
                                 viewBox="0 0 24 24" width="24" focusable="false">
                                     <path
                                         d="m3.85 3.15-.7.7L6.19 6.9C4.31 8.11 2.83 9.89 2 12c1.57 3.99 5.45 6.82 10 6.82 1.77 0 3.44-.43 4.92-1.2l3.23 3.23.71-.71L3.85 3.15zM13.8 14.5c-.51.37-1.13.59-1.8.59-1.7 0-3.09-1.39-3.09-3.09 0-.67.22-1.29.59-1.8l4.3 4.3zM12 17.82c-3.9 0-7.35-2.27-8.92-5.82.82-1.87 2.18-3.36 3.83-4.38L8.79 9.5c-.54.69-.88 1.56-.88 2.5 0 2.25 1.84 4.09 4.09 4.09.95 0 1.81-.34 2.5-.88l1.67 1.67c-1.27.61-2.69.94-4.17.94zm-.51-9.87c.17-.02.34-.05.51-.05 2.25 0 4.09 1.84 4.09 4.09 0 .17-.02.34-.05.51l-1.01-1.01c-.21-1.31-1.24-2.33-2.55-2.55l-.99-.99zM9.12 5.59c.92-.26 1.88-.41 2.88-.41 4.55 0 8.43 2.83 10 6.82-.58 1.47-1.48 2.78-2.61 3.85l-.72-.72c.93-.87 1.71-1.92 2.25-3.13C19.35 8.45 15.9 6.18 12 6.18c-.7 0-1.39.08-2.06.22l-.82-.81z">
                                     </path>
                                 </svg>
-                                <span class="">Ẩn thông báo này</span>
+                                <span class="text-[10px] sm:text-[14px]">Ẩn thông báo này</span>
                             </li>
-                            <li class="w-[350px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
+                            <li class="w-[200px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" width="24" height="24"
                                 viewBox="0 0 24 24" width="24" focusable="false">
                                     <path
                                         d="m3.85 3.15-.7.7L6.19 6.9C4.31 8.11 2.83 9.89 2 12c1.57 3.99 5.45 6.82 10 6.82 1.77 0 3.44-.43 4.92-1.2l3.23 3.23.71-.71L3.85 3.15zM13.8 14.5c-.51.37-1.13.59-1.8.59-1.7 0-3.09-1.39-3.09-3.09 0-.67.22-1.29.59-1.8l4.3 4.3zM12 17.82c-3.9 0-7.35-2.27-8.92-5.82.82-1.87 2.18-3.36 3.83-4.38L8.79 9.5c-.54.69-.88 1.56-.88 2.5 0 2.25 1.84 4.09 4.09 4.09.95 0 1.81-.34 2.5-.88l1.67 1.67c-1.27.61-2.69.94-4.17.94zm-.51-9.87c.17-.02.34-.05.51-.05 2.25 0 4.09 1.84 4.09 4.09 0 .17-.02.34-.05.51l-1.01-1.01c-.21-1.31-1.24-2.33-2.55-2.55l-.99-.99zM9.12 5.59c.92-.26 1.88-.41 2.88-.41 4.55 0 8.43 2.83 10 6.82-.58 1.47-1.48 2.78-2.61 3.85l-.72-.72c.93-.87 1.71-1.92 2.25-3.13C19.35 8.45 15.9 6.18 12 6.18c-.7 0-1.39.08-2.06.22l-.82-.81z">
                                     </path>
                                 </svg>
-                                <span class="">Tắt tất cả những thông báo từ Tuyền Văn Hóa</span>
+                                <span class="text-[10px] sm:text-[14px]">Tắt tất cả những thông báo từ Tuyền Văn Hóa</span>
                             </li>
 
                         </ul>
                     </div>
                 </li>
-
-                <li class="notification-item flex py-4 pr-4 justify-between cursor-pointer hover:bg-[#f8f8f8]">
+                <li class="notification-item flex py-4 sm:pr-4 pr-2 justify-between cursor-pointer hover:bg-[#f8f8f8]">
                     <div class="w-[4px]"></div>
                     <div>
-                        <img width="48" height="48" src="{{asset('img/channel_profile.jpg')}}"
-                            class="rounded-full mr-2" />
+                        <img width="48" height="48" src="{{asset('img/channel_profile.jpg')}}" class="sm:w-[48px] sm:h-[48px] w-[30px] h-[30px] rounded-full mr-2" />
                     </div>
 
-                    <div class="max-w-[235px]">
+                    <div class="max-w-[130px] sm:max-w-[235px]">
                         <div class="flex flex-col space-y-1">
-                            <p class="text-[14px] font-sans">
+                            <p class="text-[9px] sm:text-[14px] font-sans">
                                 Tuyền Văn Hóa uploaded: TRƯƠNG MỸ LAN ĐÃ DÙNG TRÒ MA GIÁO
                                 NÀO ĐỂ RÚT 1 TRIỆU TỶ ĐỒNG TỪ NGÂN HÀNG SCB?
                             </p>
-                            <span>1 giờ trước</span>
+                            <span class="text-[10px]">1 giờ trước</span>
                         </div>
                     </div>
 
@@ -312,45 +307,44 @@
                     </div>
 
                     <div class="relative">
+
                         <i class="ti-more button-dropdown p-2 cursor-pointer hover:bg-[#ccc] rounded-full"></i>
                         <ul class="notification-item-dropdown dropdown absolute hidden right-5 bg-white">
-                            <li class="w-[350px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
+                            <li class="w-[200px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" width="24" height="24"
                                 viewBox="0 0 24 24" width="24" focusable="false">
                                     <path
                                         d="m3.85 3.15-.7.7L6.19 6.9C4.31 8.11 2.83 9.89 2 12c1.57 3.99 5.45 6.82 10 6.82 1.77 0 3.44-.43 4.92-1.2l3.23 3.23.71-.71L3.85 3.15zM13.8 14.5c-.51.37-1.13.59-1.8.59-1.7 0-3.09-1.39-3.09-3.09 0-.67.22-1.29.59-1.8l4.3 4.3zM12 17.82c-3.9 0-7.35-2.27-8.92-5.82.82-1.87 2.18-3.36 3.83-4.38L8.79 9.5c-.54.69-.88 1.56-.88 2.5 0 2.25 1.84 4.09 4.09 4.09.95 0 1.81-.34 2.5-.88l1.67 1.67c-1.27.61-2.69.94-4.17.94zm-.51-9.87c.17-.02.34-.05.51-.05 2.25 0 4.09 1.84 4.09 4.09 0 .17-.02.34-.05.51l-1.01-1.01c-.21-1.31-1.24-2.33-2.55-2.55l-.99-.99zM9.12 5.59c.92-.26 1.88-.41 2.88-.41 4.55 0 8.43 2.83 10 6.82-.58 1.47-1.48 2.78-2.61 3.85l-.72-.72c.93-.87 1.71-1.92 2.25-3.13C19.35 8.45 15.9 6.18 12 6.18c-.7 0-1.39.08-2.06.22l-.82-.81z">
                                     </path>
                                 </svg>
-                                <span class="">Ẩn thông báo này</span>
+                                <span class="text-[10px] sm:text-[14px]">Ẩn thông báo này</span>
                             </li>
-                            <li class="w-[350px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
+                            <li class="w-[200px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" width="24" height="24"
                                 viewBox="0 0 24 24" width="24" focusable="false">
                                     <path
                                         d="m3.85 3.15-.7.7L6.19 6.9C4.31 8.11 2.83 9.89 2 12c1.57 3.99 5.45 6.82 10 6.82 1.77 0 3.44-.43 4.92-1.2l3.23 3.23.71-.71L3.85 3.15zM13.8 14.5c-.51.37-1.13.59-1.8.59-1.7 0-3.09-1.39-3.09-3.09 0-.67.22-1.29.59-1.8l4.3 4.3zM12 17.82c-3.9 0-7.35-2.27-8.92-5.82.82-1.87 2.18-3.36 3.83-4.38L8.79 9.5c-.54.69-.88 1.56-.88 2.5 0 2.25 1.84 4.09 4.09 4.09.95 0 1.81-.34 2.5-.88l1.67 1.67c-1.27.61-2.69.94-4.17.94zm-.51-9.87c.17-.02.34-.05.51-.05 2.25 0 4.09 1.84 4.09 4.09 0 .17-.02.34-.05.51l-1.01-1.01c-.21-1.31-1.24-2.33-2.55-2.55l-.99-.99zM9.12 5.59c.92-.26 1.88-.41 2.88-.41 4.55 0 8.43 2.83 10 6.82-.58 1.47-1.48 2.78-2.61 3.85l-.72-.72c.93-.87 1.71-1.92 2.25-3.13C19.35 8.45 15.9 6.18 12 6.18c-.7 0-1.39.08-2.06.22l-.82-.81z">
                                     </path>
                                 </svg>
-                                <span class="">Tắt tất cả những thông báo từ Tuyền Văn Hóa</span>
+                                <span class="text-[10px] sm:text-[14px]">Tắt tất cả những thông báo từ Tuyền Văn Hóa</span>
                             </li>
 
                         </ul>
                     </div>
                 </li>
-
-                <li class="notification-item flex py-4 pr-4 justify-between cursor-pointer hover:bg-[#f8f8f8]">
+                <li class="notification-item flex py-4 sm:pr-4 pr-2 justify-between cursor-pointer hover:bg-[#f8f8f8]">
                     <div class="w-[4px]"></div>
                     <div>
-                        <img width="48" height="48" src="{{asset('img/channel_profile.jpg')}}"
-                            class="rounded-full mr-2" />
+                        <img width="48" height="48" src="{{asset('img/channel_profile.jpg')}}" class="sm:w-[48px] sm:h-[48px] w-[30px] h-[30px] rounded-full mr-2" />
                     </div>
 
-                    <div class="max-w-[235px]">
+                    <div class="max-w-[130px] sm:max-w-[235px]">
                         <div class="flex flex-col space-y-1">
-                            <p class="text-[14px] font-sans">
+                            <p class="text-[9px] sm:text-[14px] font-sans">
                                 Tuyền Văn Hóa uploaded: TRƯƠNG MỸ LAN ĐÃ DÙNG TRÒ MA GIÁO
                                 NÀO ĐỂ RÚT 1 TRIỆU TỶ ĐỒNG TỪ NGÂN HÀNG SCB?
                             </p>
-                            <span>1 giờ trước</span>
+                            <span class="text-[10px]">1 giờ trước</span>
                         </div>
                     </div>
 
@@ -359,45 +353,44 @@
                     </div>
 
                     <div class="relative">
+
                         <i class="ti-more button-dropdown p-2 cursor-pointer hover:bg-[#ccc] rounded-full"></i>
                         <ul class="notification-item-dropdown dropdown absolute hidden right-5 bg-white">
-                            <li class="w-[350px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
+                            <li class="w-[200px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" width="24" height="24"
                                 viewBox="0 0 24 24" width="24" focusable="false">
                                     <path
                                         d="m3.85 3.15-.7.7L6.19 6.9C4.31 8.11 2.83 9.89 2 12c1.57 3.99 5.45 6.82 10 6.82 1.77 0 3.44-.43 4.92-1.2l3.23 3.23.71-.71L3.85 3.15zM13.8 14.5c-.51.37-1.13.59-1.8.59-1.7 0-3.09-1.39-3.09-3.09 0-.67.22-1.29.59-1.8l4.3 4.3zM12 17.82c-3.9 0-7.35-2.27-8.92-5.82.82-1.87 2.18-3.36 3.83-4.38L8.79 9.5c-.54.69-.88 1.56-.88 2.5 0 2.25 1.84 4.09 4.09 4.09.95 0 1.81-.34 2.5-.88l1.67 1.67c-1.27.61-2.69.94-4.17.94zm-.51-9.87c.17-.02.34-.05.51-.05 2.25 0 4.09 1.84 4.09 4.09 0 .17-.02.34-.05.51l-1.01-1.01c-.21-1.31-1.24-2.33-2.55-2.55l-.99-.99zM9.12 5.59c.92-.26 1.88-.41 2.88-.41 4.55 0 8.43 2.83 10 6.82-.58 1.47-1.48 2.78-2.61 3.85l-.72-.72c.93-.87 1.71-1.92 2.25-3.13C19.35 8.45 15.9 6.18 12 6.18c-.7 0-1.39.08-2.06.22l-.82-.81z">
                                     </path>
                                 </svg>
-                                <span class="">Ẩn thông báo này</span>
+                                <span class="text-[10px] sm:text-[14px]">Ẩn thông báo này</span>
                             </li>
-                            <li class="w-[350px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
+                            <li class="w-[200px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" width="24" height="24"
                                 viewBox="0 0 24 24" width="24" focusable="false">
                                     <path
                                         d="m3.85 3.15-.7.7L6.19 6.9C4.31 8.11 2.83 9.89 2 12c1.57 3.99 5.45 6.82 10 6.82 1.77 0 3.44-.43 4.92-1.2l3.23 3.23.71-.71L3.85 3.15zM13.8 14.5c-.51.37-1.13.59-1.8.59-1.7 0-3.09-1.39-3.09-3.09 0-.67.22-1.29.59-1.8l4.3 4.3zM12 17.82c-3.9 0-7.35-2.27-8.92-5.82.82-1.87 2.18-3.36 3.83-4.38L8.79 9.5c-.54.69-.88 1.56-.88 2.5 0 2.25 1.84 4.09 4.09 4.09.95 0 1.81-.34 2.5-.88l1.67 1.67c-1.27.61-2.69.94-4.17.94zm-.51-9.87c.17-.02.34-.05.51-.05 2.25 0 4.09 1.84 4.09 4.09 0 .17-.02.34-.05.51l-1.01-1.01c-.21-1.31-1.24-2.33-2.55-2.55l-.99-.99zM9.12 5.59c.92-.26 1.88-.41 2.88-.41 4.55 0 8.43 2.83 10 6.82-.58 1.47-1.48 2.78-2.61 3.85l-.72-.72c.93-.87 1.71-1.92 2.25-3.13C19.35 8.45 15.9 6.18 12 6.18c-.7 0-1.39.08-2.06.22l-.82-.81z">
                                     </path>
                                 </svg>
-                                <span class="">Tắt tất cả những thông báo từ Tuyền Văn Hóa</span>
+                                <span class="text-[10px] sm:text-[14px]">Tắt tất cả những thông báo từ Tuyền Văn Hóa</span>
                             </li>
 
                         </ul>
                     </div>
                 </li>
-
-                <li class="notification-item flex py-4 pr-4 justify-between cursor-pointer hover:bg-[#f8f8f8]">
+                <li class="notification-item flex py-4 sm:pr-4 pr-2 justify-between cursor-pointer hover:bg-[#f8f8f8]">
                     <div class="w-[4px]"></div>
                     <div>
-                        <img width="48" height="48" src="{{asset('img/channel_profile.jpg')}}"
-                            class="rounded-full mr-2" />
+                        <img width="48" height="48" src="{{asset('img/channel_profile.jpg')}}" class="sm:w-[48px] sm:h-[48px] w-[30px] h-[30px] rounded-full mr-2" />
                     </div>
 
-                    <div class="max-w-[235px]">
+                    <div class="max-w-[130px] sm:max-w-[235px]">
                         <div class="flex flex-col space-y-1">
-                            <p class="text-[14px] font-sans">
+                            <p class="text-[9px] sm:text-[14px] font-sans">
                                 Tuyền Văn Hóa uploaded: TRƯƠNG MỸ LAN ĐÃ DÙNG TRÒ MA GIÁO
                                 NÀO ĐỂ RÚT 1 TRIỆU TỶ ĐỒNG TỪ NGÂN HÀNG SCB?
                             </p>
-                            <span>1 giờ trước</span>
+                            <span class="text-[10px]">1 giờ trước</span>
                         </div>
                     </div>
 
@@ -406,36 +399,84 @@
                     </div>
 
                     <div class="relative">
-                        <i class="ti-more notification-item-more button-dropdown p-2 cursor-pointer hover:bg-[#ccc] rounded-full"></i>
+
+                        <i class="ti-more button-dropdown p-2 cursor-pointer hover:bg-[#ccc] rounded-full"></i>
                         <ul class="notification-item-dropdown dropdown absolute hidden right-5 bg-white">
-                            <li class="w-[350px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
+                            <li class="w-[200px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" width="24" height="24"
                                 viewBox="0 0 24 24" width="24" focusable="false">
                                     <path
                                         d="m3.85 3.15-.7.7L6.19 6.9C4.31 8.11 2.83 9.89 2 12c1.57 3.99 5.45 6.82 10 6.82 1.77 0 3.44-.43 4.92-1.2l3.23 3.23.71-.71L3.85 3.15zM13.8 14.5c-.51.37-1.13.59-1.8.59-1.7 0-3.09-1.39-3.09-3.09 0-.67.22-1.29.59-1.8l4.3 4.3zM12 17.82c-3.9 0-7.35-2.27-8.92-5.82.82-1.87 2.18-3.36 3.83-4.38L8.79 9.5c-.54.69-.88 1.56-.88 2.5 0 2.25 1.84 4.09 4.09 4.09.95 0 1.81-.34 2.5-.88l1.67 1.67c-1.27.61-2.69.94-4.17.94zm-.51-9.87c.17-.02.34-.05.51-.05 2.25 0 4.09 1.84 4.09 4.09 0 .17-.02.34-.05.51l-1.01-1.01c-.21-1.31-1.24-2.33-2.55-2.55l-.99-.99zM9.12 5.59c.92-.26 1.88-.41 2.88-.41 4.55 0 8.43 2.83 10 6.82-.58 1.47-1.48 2.78-2.61 3.85l-.72-.72c.93-.87 1.71-1.92 2.25-3.13C19.35 8.45 15.9 6.18 12 6.18c-.7 0-1.39.08-2.06.22l-.82-.81z">
                                     </path>
                                 </svg>
-                                <span class="">Ẩn thông báo này</span>
+                                <span class="text-[10px] sm:text-[14px]">Ẩn thông báo này</span>
                             </li>
-                            <li class="w-[350px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
+                            <li class="w-[200px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" width="24" height="24"
                                 viewBox="0 0 24 24" width="24" focusable="false">
                                     <path
                                         d="m3.85 3.15-.7.7L6.19 6.9C4.31 8.11 2.83 9.89 2 12c1.57 3.99 5.45 6.82 10 6.82 1.77 0 3.44-.43 4.92-1.2l3.23 3.23.71-.71L3.85 3.15zM13.8 14.5c-.51.37-1.13.59-1.8.59-1.7 0-3.09-1.39-3.09-3.09 0-.67.22-1.29.59-1.8l4.3 4.3zM12 17.82c-3.9 0-7.35-2.27-8.92-5.82.82-1.87 2.18-3.36 3.83-4.38L8.79 9.5c-.54.69-.88 1.56-.88 2.5 0 2.25 1.84 4.09 4.09 4.09.95 0 1.81-.34 2.5-.88l1.67 1.67c-1.27.61-2.69.94-4.17.94zm-.51-9.87c.17-.02.34-.05.51-.05 2.25 0 4.09 1.84 4.09 4.09 0 .17-.02.34-.05.51l-1.01-1.01c-.21-1.31-1.24-2.33-2.55-2.55l-.99-.99zM9.12 5.59c.92-.26 1.88-.41 2.88-.41 4.55 0 8.43 2.83 10 6.82-.58 1.47-1.48 2.78-2.61 3.85l-.72-.72c.93-.87 1.71-1.92 2.25-3.13C19.35 8.45 15.9 6.18 12 6.18c-.7 0-1.39.08-2.06.22l-.82-.81z">
                                     </path>
                                 </svg>
-                                <span class="">Tắt tất cả những thông báo từ Tuyền Văn Hóa</span>
+                                <span class="text-[10px] sm:text-[14px]">Tắt tất cả những thông báo từ Tuyền Văn Hóa</span>
                             </li>
 
                         </ul>
                     </div>
                 </li>
+                <li class="notification-item flex py-4 sm:pr-4 pr-2 justify-between cursor-pointer hover:bg-[#f8f8f8]">
+                    <div class="w-[4px]"></div>
+                    <div>
+                        <img width="48" height="48" src="{{asset('img/channel_profile.jpg')}}" class="sm:w-[48px] sm:h-[48px] w-[30px] h-[30px] rounded-full mr-2" />
+                    </div>
+
+                    <div class="max-w-[130px] sm:max-w-[235px]">
+                        <div class="flex flex-col space-y-1">
+                            <p class="text-[9px] sm:text-[14px] font-sans">
+                                Tuyền Văn Hóa uploaded: TRƯƠNG MỸ LAN ĐÃ DÙNG TRÒ MA GIÁO
+                                NÀO ĐỂ RÚT 1 TRIỆU TỶ ĐỒNG TỪ NGÂN HÀNG SCB?
+                            </p>
+                            <span class="text-[10px]">1 giờ trước</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="{{asset('img/main-img.jpg')}}" width="86" height="64" alt="" />
+                    </div>
+
+                    <div class="relative">
+
+                        <i class="ti-more button-dropdown p-2 cursor-pointer hover:bg-[#ccc] rounded-full"></i>
+                        <ul class="notification-item-dropdown dropdown absolute hidden right-5 bg-white">
+                            <li class="w-[200px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" width="24" height="24"
+                                viewBox="0 0 24 24" width="24" focusable="false">
+                                    <path
+                                        d="m3.85 3.15-.7.7L6.19 6.9C4.31 8.11 2.83 9.89 2 12c1.57 3.99 5.45 6.82 10 6.82 1.77 0 3.44-.43 4.92-1.2l3.23 3.23.71-.71L3.85 3.15zM13.8 14.5c-.51.37-1.13.59-1.8.59-1.7 0-3.09-1.39-3.09-3.09 0-.67.22-1.29.59-1.8l4.3 4.3zM12 17.82c-3.9 0-7.35-2.27-8.92-5.82.82-1.87 2.18-3.36 3.83-4.38L8.79 9.5c-.54.69-.88 1.56-.88 2.5 0 2.25 1.84 4.09 4.09 4.09.95 0 1.81-.34 2.5-.88l1.67 1.67c-1.27.61-2.69.94-4.17.94zm-.51-9.87c.17-.02.34-.05.51-.05 2.25 0 4.09 1.84 4.09 4.09 0 .17-.02.34-.05.51l-1.01-1.01c-.21-1.31-1.24-2.33-2.55-2.55l-.99-.99zM9.12 5.59c.92-.26 1.88-.41 2.88-.41 4.55 0 8.43 2.83 10 6.82-.58 1.47-1.48 2.78-2.61 3.85l-.72-.72c.93-.87 1.71-1.92 2.25-3.13C19.35 8.45 15.9 6.18 12 6.18c-.7 0-1.39.08-2.06.22l-.82-.81z">
+                                    </path>
+                                </svg>
+                                <span class="text-[10px] sm:text-[14px]">Ẩn thông báo này</span>
+                            </li>
+                            <li class="w-[200px] flex p-2 items-center cursor-pointer hover:bg-slate-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" width="24" height="24"
+                                viewBox="0 0 24 24" width="24" focusable="false">
+                                    <path
+                                        d="m3.85 3.15-.7.7L6.19 6.9C4.31 8.11 2.83 9.89 2 12c1.57 3.99 5.45 6.82 10 6.82 1.77 0 3.44-.43 4.92-1.2l3.23 3.23.71-.71L3.85 3.15zM13.8 14.5c-.51.37-1.13.59-1.8.59-1.7 0-3.09-1.39-3.09-3.09 0-.67.22-1.29.59-1.8l4.3 4.3zM12 17.82c-3.9 0-7.35-2.27-8.92-5.82.82-1.87 2.18-3.36 3.83-4.38L8.79 9.5c-.54.69-.88 1.56-.88 2.5 0 2.25 1.84 4.09 4.09 4.09.95 0 1.81-.34 2.5-.88l1.67 1.67c-1.27.61-2.69.94-4.17.94zm-.51-9.87c.17-.02.34-.05.51-.05 2.25 0 4.09 1.84 4.09 4.09 0 .17-.02.34-.05.51l-1.01-1.01c-.21-1.31-1.24-2.33-2.55-2.55l-.99-.99zM9.12 5.59c.92-.26 1.88-.41 2.88-.41 4.55 0 8.43 2.83 10 6.82-.58 1.47-1.48 2.78-2.61 3.85l-.72-.72c.93-.87 1.71-1.92 2.25-3.13C19.35 8.45 15.9 6.18 12 6.18c-.7 0-1.39.08-2.06.22l-.82-.81z">
+                                    </path>
+                                </svg>
+                                <span class="text-[10px] sm:text-[14px]">Tắt tất cả những thông báo từ Tuyền Văn Hóa</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+
 
 
             </ul>
         </div>
 
-        <div class="profile-wrapper w-[42px] h-[42px] relative">
+        <div class="profile-wrapper w-[30px] h-[30px] sm:w-[42px] sm:h-[42px] relative">
             <img src="{{asset('img/T.jpg')}}" alt="" class="button-dropdown show-profile rounded-full cursor-pointer" />
             <div
                 class="change-account-dropdown sub-dropdown hidden dropdown absolute right-4 top-14 bg-white w-[268px] font-sans">

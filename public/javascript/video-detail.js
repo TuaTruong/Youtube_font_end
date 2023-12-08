@@ -1,3 +1,25 @@
+document.querySelector(".show-search-bar.search-btn").addEventListener("click",function(){
+    if (window.innerWidth < 640){
+        document.querySelector(".end-header").classList.add("hidden")
+        document.querySelector(".start-header").classList.add("hidden")
+        document.querySelector(".center-header").classList.remove("hidden")
+        document.querySelector(".center-header").classList.remove("justify-center")
+        document.querySelector(".center-header").classList.add("justify-between")
+        document.querySelector(".center-header .back-btn").classList.remove("hidden")
+    }}
+)
+
+document.querySelector(".center-header .back-btn").addEventListener("click",function(){
+    if (window.innerWidth < 640){
+        document.querySelector(".end-header").classList.remove("hidden")
+        document.querySelector(".start-header").classList.remove("hidden")
+        document.querySelector(".center-header").classList.add("hidden")
+        document.querySelector(".center-header").classList.add("justify-center")
+        document.querySelector(".center-header").classList.remove("justify-between")
+        document.querySelector(".center-header .back-btn").classList.add("hidden")
+    }}
+)
+
 document
     .querySelector("div.upload-btn")
     .addEventListener("click", function() {
