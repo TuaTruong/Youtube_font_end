@@ -53,7 +53,7 @@
 
 <body class="h-screen">
     <!-- HEADER  -->
-    <div class="header-wrapper fixed w-[100%] h-[62px] px-2 py-2 bg-white z-10 mr-1">
+    <div class="header-wrapper fixed w-[100%] h-[62px] py-2 px-3 bg-white z-10">
         @include("header")
     </div>
     <!-- END HEADER  -->
@@ -143,15 +143,21 @@
                 background-size: cover;
                 background-repeat: no-repeat;
             }
+
+            /* .profile-detail::after{
+                content:"";
+                position: ;
+                
+            } */
         </style>
 
         <div class="content flex flex-col justify-center w-[100%]">
-            <div class="profile-detail w-[100%] md:w-[856px] 2xl:w-[1070px] flex flex-col justify-center mx-auto">
-                <div class="relative w-[100%] h-0 pt-[16.2%] md:h-[137px] 2xl:h-[172px]">
+            <div class="profile-detail w-[100%] md:w-[642px] lg:w-[856px] 2xl:w-[1070px] flex flex-col justify-center mx-auto space-y-4">
+                <div class="relative w-[100%] h-0 pt-[16.2%] lg:h-[137px] 2xl:h-[172px]">
                     <div class="profile-banner absolute left-0 top-0 w-[100%] h-[100%] rounded-xl"></div>
                 </div>
 
-                <div class="profile-info flex items-center mt-2 space-x-2">
+                <div class="profile-info flex items-center space-x-2">
                     <img src="{{asset('img/avt.jpg')}}" class="self-start w-[160px] h-[160px] rounded-full hidden sm:block" alt="">
                     <div class="flex flex-col space-y-3 self-start">
                         <h1 class="font-bold text-3xl">Một Bản Tình Ca</h1>
@@ -160,6 +166,17 @@
                         <button class="cursor-pointer hover:bg-slate-700 text-[12px] text-white bg-black font-semibold rounded-[30px] py-2 px-3 self-start">Đăng ký</button>
                     </div>
                 </div>
+
+                <ul class="flex space-x-2 sm:space-x-3 border-b-2 overflow-x-auto sm:overflow-visible justify-start items-center">
+                    <li class="font-bold inline-block pb-2 border-b-2 border-black cursor-pointer text-[10px] sm:text-[14px] whitespace-nowrap">Trang chủ</li>
+                    <li class="font-bold inline-block pb-2 hover:border-b-2 border-slate-700 text-slate-700 cursor-pointer text-[10px] sm:text-[14px] whitespace-nowrap">video</li>
+                    <li class="font-bold inline-block pb-2 hover:border-b-2 border-slate-700 text-slate-700 cursor-pointer text-[10px] sm:text-[14px] whitespace-nowrap">Danh sách phát</li>
+                    <li class="font-bold inline-block pb-2 hover:border-b-2 border-slate-700 text-slate-700 cursor-pointer text-[10px] sm:text-[14px] whitespace-nowrap">Cộng đồng</li>
+                    <li class="ml-2 flex items-center pb-2">
+                        <i class="ti-search cursor-pointer rounded-full "></i>
+                        <input type="text" class="outline-none sm:w-sm" placeholder="Tìm kiếm">
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
