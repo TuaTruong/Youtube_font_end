@@ -137,48 +137,7 @@
 
 
     <div class="content-wrapper px-[10px] sm:ml-[80px] sm:w-[calc(100%-80px)] w-[100%] xl:ml-[240px] xl:w-[calc(100%-250px)] mt-[80px]" style="display: inline-block">
-        <style>
-            .profile-banner {
-                background-image: url("{{asset('img/profile-banner.jpg')}}");
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            /* .profile-detail::after{
-                content:"";
-                position: ;
-                
-            } */
-        </style>
-
-        <div class="content flex flex-col justify-center w-[100%]">
-            <div class="profile-detail w-[100%] md:w-[642px] lg:w-[856px] 2xl:w-[1070px] flex flex-col justify-center mx-auto space-y-4">
-                <div class="relative w-[100%] h-0 pt-[16.2%] lg:h-[137px] 2xl:h-[172px]">
-                    <div class="profile-banner absolute left-0 top-0 w-[100%] h-[100%] rounded-xl"></div>
-                </div>
-
-                <div class="profile-info flex items-center space-x-2">
-                    <img src="{{asset('img/avt.jpg')}}" class="self-start w-[160px] h-[160px] rounded-full hidden sm:block" alt="">
-                    <div class="flex flex-col space-y-3 self-start">
-                        <h1 class="font-bold text-3xl">Một Bản Tình Ca</h1>
-                        <p class="overflow-x-clip line-clamp-1">@motbantinhca ‧ 71,4 N người đăng ký ‧ 679 video</p>
-                        <p class="overflow-x-clip line-clamp-1">Orinn Music là đội ngũ sản xuất những dự án âm nhạc hàng đầu Việt Nam.</p>
-                        <button class="cursor-pointer hover:bg-slate-700 text-[12px] text-white bg-black font-semibold rounded-[30px] py-2 px-3 self-start">Đăng ký</button>
-                    </div>
-                </div>
-
-                <ul class="flex space-x-2 sm:space-x-3 border-b-2 overflow-x-auto sm:overflow-visible justify-start items-center">
-                    <li class="font-bold inline-block pb-2 border-b-2 border-black cursor-pointer text-[10px] sm:text-[14px] whitespace-nowrap">Trang chủ</li>
-                    <li class="font-bold inline-block pb-2 hover:border-b-2 border-slate-700 text-slate-700 cursor-pointer text-[10px] sm:text-[14px] whitespace-nowrap">video</li>
-                    <li class="font-bold inline-block pb-2 hover:border-b-2 border-slate-700 text-slate-700 cursor-pointer text-[10px] sm:text-[14px] whitespace-nowrap">Danh sách phát</li>
-                    <li class="font-bold inline-block pb-2 hover:border-b-2 border-slate-700 text-slate-700 cursor-pointer text-[10px] sm:text-[14px] whitespace-nowrap">Cộng đồng</li>
-                    <li class="ml-2 flex items-center pb-2">
-                        <i class="ti-search cursor-pointer rounded-full "></i>
-                        <input type="text" class="outline-none sm:w-sm" placeholder="Tìm kiếm">
-                    </li>
-                </ul>
-            </div>
-        </div>
+        @include("profile-content")
     </div>
 
     <script src="{{asset('javascript/home.js')}}"></script>
