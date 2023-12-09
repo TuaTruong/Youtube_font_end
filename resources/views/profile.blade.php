@@ -140,7 +140,7 @@
         @include("profile-content")
     </div>
 
-    <script src="{{asset('javascript/home.js')}}"></script>
+    <script src="{{asset('javascript/profile.js')}}"></script>
 </body>
 
 </html>
