@@ -72,12 +72,12 @@
     </div>
 
     <!-- End header  -->
-    <div class="end-header flex items-center font-serif text-sm header-end lg:space-x-2 xl:space-x-2 space-x-1">
+    <div class="end-header flex items-center font-serif text-sm space-x-0 header-end lg:space-x-2 xl:space-x-2">
         <div class="show-search-bar search-btn sm:hidden">
             <i class="ti-search cursor-pointer hover:bg-[#ccc] p-2 sm:p-4 rounded-full"></i>
         </div>
 
-        <div class="microphone-btn sm:hidden">
+        <!-- <div class="microphone-btn sm:hidden">
             <div class="p-1 sm:p-3 rounded-full bg-[#f8f8f8] cursor-pointer hover:bg-[#ccc]">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                     <path
@@ -85,7 +85,7 @@
                     </path>
                 </svg>
             </div>
-        </div>
+        </div> -->
 
         <div class="upload-wrapper relative">
             <div class="group hover:bg-[#ccc] upload-btn rounded-full p-1 sm:p-3 button-dropdown cursor-pointer relative">

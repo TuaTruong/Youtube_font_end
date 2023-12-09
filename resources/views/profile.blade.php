@@ -37,15 +37,15 @@
             cursor: pointer;
         }
 
-        .dropdown{
+        .dropdown {
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             z-index: 1;
         }
 
-        .profile-banner{
+        .profile-banner {
             background-image: url("{{ asset('img/profile-banner.jpg') }}");
-            background-size:cover;
-            
+            background-size: cover;
+
         }
     </style>
     <title>Youtube</title>
@@ -94,7 +94,7 @@
         <div class="w-[224px] p-2 h-screen overflow-y-scroll text-[13px] bg-white">
             <div class="flex items-center my-1 border-b-[1px] py-1">
                 <i class="ti-menu hide-modal-sidebar p-4 cursor-pointer hover:bg-[#ccc] rounded-full"></i>
-                
+
                 <div class="cursor-pointer ytb-logo">
                     <svg xmlns="http://www.w3.org/2000/svg" class="external-icon" viewBox="0 0 90 20" focusable="false" width="90" height="20" class="inline">
                         <svg viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
@@ -125,7 +125,7 @@
                 </div>
                 <div class="pb-5 text-xs">VN</div>
             </div>
-            
+
             @include("sidebar")
         </div>
     </div>
@@ -137,7 +137,31 @@
 
 
     <div class="content-wrapper px-[10px] sm:ml-[80px] sm:w-[calc(100%-80px)] w-[100%] xl:ml-[240px] xl:w-[calc(100%-250px)] mt-[80px]" style="display: inline-block">
-        @include("profile-content")
+        <style>
+            .profile-banner {
+                background-image: url("{{asset('img/profile-banner.jpg')}}");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        </style>
+
+        <div class="content flex flex-col justify-center w-[100%]">
+            <div class="profile-detail w-[100%] md:w-[856px] 2xl:w-[1070px] flex flex-col justify-center mx-auto">
+                <div class="relative w-[100%] h-0 pt-[16.2%] md:h-[137px] 2xl:h-[172px]">
+                    <div class="profile-banner absolute left-0 top-0 w-[100%] h-[100%] rounded-xl"></div>
+                </div>
+
+                <div class="profile-info flex items-center mt-2 space-x-2">
+                    <img src="{{asset('img/avt.jpg')}}" class="self-start w-[160px] h-[160px] rounded-full hidden sm:block" alt="">
+                    <div class="flex flex-col space-y-3 self-start">
+                        <h1 class="font-bold text-3xl">Một Bản Tình Ca</h1>
+                        <p class="overflow-x-clip line-clamp-1">@motbantinhca ‧ 71,4 N người đăng ký ‧ 679 video</p>
+                        <p class="overflow-x-clip line-clamp-1">Orinn Music là đội ngũ sản xuất những dự án âm nhạc hàng đầu Việt Nam.</p>
+                        <button class="cursor-pointer hover:bg-slate-700 text-[12px] text-white bg-black font-semibold rounded-[30px] py-2 px-3 self-start">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="{{asset('javascript/home.js')}}"></script>
