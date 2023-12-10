@@ -136,7 +136,7 @@
     <!-- End sidebar -->
 
 
-    <div class="content-wrapper px-[10px] sm:ml-[80px] sm:w-[calc(100%-80px)] w-[100%] xl:ml-[240px] xl:w-[calc(100%-250px)] mt-[80px]" style="display: inline-block">
+    <div class="content-wrapper px-[10px] sm:ml-[80px] sm:w-[calc(100%-80px)] w-[100%] xl:ml-[240px] xl:w-[calc(100%-240px)] mt-[80px]" style="display: inline-block">
         @include("profile-content")
     </div>
 

@@ -100,9 +100,10 @@ document.querySelector(".start-header i.ti-menu").addEventListener("click", func
     if(window.innerWidth < 1280){
         document.querySelector("div.modal-sidebar").classList.toggle("hidden");
     } else {
+        console.log("ok")
         document.querySelector(".big-sidebar").classList.toggle("xl:block");
-        document.querySelector(".content-wrapper").classList.toggle("xl:ml-[250px]");
-        document.querySelector(".content-wrapper").classList.toggle("xl:w-[calc(100%-250px)]");
+        document.querySelector(".content-wrapper").classList.toggle("xl:ml-[240px]");
+        document.querySelector(".content-wrapper").classList.toggle("xl:w-[calc(100%-240px)]");
         document.querySelector(".mini-sidebar").classList.toggle("hidden");
     }
 });
