@@ -6,15 +6,15 @@ document.querySelectorAll(".notification-item").forEach(notiEl =>{
  })
 })
 
-document.querySelectorAll(".video-item").forEach(notiEl =>{
-    notiEl.querySelectorAll(".video-actions .button-dropdown").forEach(el =>{
-        el.addEventListener("click",function(){
-            console.log("click")
-            console.log(this.parentNode)
-            this.parentNode.querySelector(".dropdown").classList.toggle("hidden")
-        })
- })
-})
+// document.querySelectorAll(".video-item").forEach(notiEl =>{
+//     notiEl.querySelectorAll(".video-actions .button-dropdown").forEach(el =>{
+//         el.addEventListener("click",function(){
+//             console.log("click")
+//             console.log(this.parentNode)
+//             this.parentNode.querySelector(".dropdown").classList.toggle("hidden")
+//         })
+//  })
+// })
 
 document.querySelector(".show-search-bar.search-btn").addEventListener("click",function(){
     if (window.innerWidth < 640){

@@ -43,7 +43,7 @@
         <h2 class="text-sm sm:text-xl font-bold">Dành cho bạn</h2>
         <ul class="flex space-x-4 justify-start items-center pb-2 overflow-y-visible overflow-x-scroll">
             <li class="video-item font-bold flex flex-col cursor-pointer text-[10px] sm:text-[14px]">
-                <div class="w-[354px]">
+                <div class="w-[260px] sm:w-[354px]">
                     <img class="w-[100%] rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" />
                     <div class="group flex mt-3 w-[100%]">
                         <div class="w-[calc(90%)] cursor-pointer">
@@ -113,7 +113,7 @@
                 </div>
             </li>
             <li class="video-item font-bold flex flex-col cursor-pointer text-[10px] sm:text-[14px]">
-                <div class="w-[354px]">
+                <div class="w-[260px] sm:w-[354px]">
                     <img class="w-[100%] rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" />
                     <div class="group flex mt-3 w-[100%]">
                         <div class="w-[calc(90%)] cursor-pointer">
@@ -183,7 +183,7 @@
                 </div>
             </li>
             <li class="video-item font-bold flex flex-col cursor-pointer text-[10px] sm:text-[14px]">
-                <div class="w-[354px]">
+                <div class="w-[260px] sm:w-[354px]">
                     <img class="w-[100%] rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" />
                     <div class="group flex mt-3 w-[100%]">
                         <div class="w-[calc(90%)] cursor-pointer">
@@ -253,7 +253,7 @@
                 </div>
             </li>
             <li class="video-item font-bold flex flex-col cursor-pointer text-[10px] sm:text-[14px]">
-                <div class="w-[354px]">
+                <div class="w-[260px] sm:w-[354px]">
                     <img class="w-[100%] rounded-lg hover:rounded-none cursor-pointer" src="{{asset('img/hq720.webp')}}" alt="" />
                     <div class="group flex mt-3 w-[100%]">
                         <div class="w-[calc(90%)] cursor-pointer">
