@@ -39,7 +39,7 @@ document.querySelector(".center-header .back-btn").addEventListener("click",func
 )
 
 document
-    .querySelector("div.upload-btn")
+    .querySelector(".upload-btn")
     .addEventListener("click", function() {
         document
             .querySelector(".upload-dropdown")
@@ -47,7 +47,7 @@ document
     });
 
 document
-    .querySelector("div.notification-button")
+    .querySelector(".notification-button")
     .addEventListener("click", function() {
         document
             .querySelector(".notification-dropdown")
@@ -68,7 +68,7 @@ document
 
         if (!subDropdownExist) {
             document
-                .querySelector("div.profile-wrapper > div.main-profile-dropdown")
+                .querySelector(".profile-wrapper > .main-profile-dropdown")
                 .classList.toggle("hidden");
         }
     });
@@ -79,12 +79,12 @@ function processSubDropdown(dropdownField) {
         document.querySelector(".main-profile-dropdown").classList.remove("hidden")
     })
 
-    document.querySelector(`div.main-profile-dropdown .change-${dropdownField}-button`).addEventListener("click", function() {
+    document.querySelector(`.main-profile-dropdown .change-${dropdownField}-button`).addEventListener("click", function() {
         document
-            .querySelector("div.profile-wrapper > div.main-profile-dropdown")
+            .querySelector(".profile-wrapper > .main-profile-dropdown")
             .classList.add("hidden");
         document
-            .querySelector(`div.profile-wrapper > div.change-${dropdownField}-dropdown`)
+            .querySelector(`.profile-wrapper > .change-${dropdownField}-dropdown`)
             .classList.remove("hidden");
     })
 }
@@ -98,7 +98,7 @@ processSubDropdown("restrict-mode")
 document.querySelector(".start-header i.ti-menu").addEventListener("click", function() {
     console.log(this)
     if(window.innerWidth < 1280){
-        document.querySelector("div.modal-sidebar").classList.toggle("hidden");
+        document.querySelector(".modal-sidebar").classList.toggle("hidden");
     } else {
         document.querySelector(".big-sidebar").classList.toggle("xl:block");
         document.querySelector(".content-wrapper").classList.toggle("xl:ml-[250px]");
@@ -109,7 +109,7 @@ document.querySelector(".start-header i.ti-menu").addEventListener("click", func
 
 document.querySelector("i.ti-menu.hide-modal-sidebar").addEventListener("click", function() {
     if(window.innerWidth < 1280){
-        document.querySelector("div.modal-sidebar").classList.toggle("hidden");
+        document.querySelector(".modal-sidebar").classList.toggle("hidden");
     }
 });
 
@@ -189,7 +189,7 @@ handleToggleButtonSidebar(".big-sidebar")
 document.querySelector(".show-more-short-button").addEventListener("click", function() {
     document.querySelector(".show-more-short-button").classList.toggle("hidden")
     document.querySelector(".show-less-short-button").classList.toggle("hidden")
-    let shortGridItems = document.querySelector("div.short-container > div.shorts-grid").querySelectorAll("div.short-item");
+    let shortGridItems = document.querySelector(".short-container > .shorts-grid").querySelectorAll(".short-item");
     for (let i = 0; i < shortGridItems.length; i++) {
         if (shortGridItems[i].classList.contains("hidden")) shortGridItems[i].classList.remove("hidden")
     }
@@ -206,7 +206,7 @@ document.querySelector(".show-less-short-button").addEventListener("click", func
         shortItemsShowCount = 5;
     }
 
-    let shortGridItems = document.querySelector("div.short-container > div.shorts-grid").querySelectorAll("div.short-item");
+    let shortGridItems = document.querySelector(".short-container > .shorts-grid").querySelectorAll(".short-item");
     for (let i = 0; i < shortGridItems.length; i++) {
         if (i > shortItemsShowCount - 1) {
             if (!shortGridItems[i].classList.contains("hidden")) shortGridItems[i].classList.add("hidden")
@@ -227,28 +227,28 @@ function adjustShortGridItem() {
         }
 
         const gridContainer = document.querySelector(".shorts-grid");
-        let gridsCount = gridContainer.querySelectorAll("div.short-item").length;
+        let gridsCount = gridContainer.querySelectorAll(".short-item").length;
         for (let i = 0; i <= gridsCount - 1; i++) {
             if (i >= maxGridItem) {
                 gridContainer
-                    .querySelectorAll("div.short-item")[i].classList.add("hidden");
+                    .querySelectorAll(".short-item")[i].classList.add("hidden");
             } else {
                 gridContainer
-                    .querySelectorAll("div.short-item")[i].classList.remove("hidden");
+                    .querySelectorAll(".short-item")[i].classList.remove("hidden");
             }
         }
     }
 }
 function adjustSidebar(){
     if (window.innerWidth < 640){
-        if (!document.querySelector("div.mini-sidebar").classList.contains("hidden")){
-            document.querySelector("div.mini-sidebar").classList.add("hidden")
+        if (!document.querySelector(".mini-sidebar").classList.contains("hidden")){
+            document.querySelector(".mini-sidebar").classList.add("hidden")
         }
     }
     
     if (window.innerWidth > 1280){
-        if (!document.querySelector("div.modal-sidebar").classList.contains("hidden")){
-            document.querySelector("div.modal-sidebar").classList.add("hidden")
+        if (!document.querySelector(".modal-sidebar").classList.contains("hidden")){
+            document.querySelector(".modal-sidebar").classList.add("hidden")
         }
     }
 }

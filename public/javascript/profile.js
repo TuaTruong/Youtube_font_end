@@ -39,7 +39,7 @@ document.querySelector(".center-header .back-btn").addEventListener("click",func
 )
 
 document
-    .querySelector("div.upload-btn")
+    .querySelector(".upload-btn")
     .addEventListener("click", function() {
         document
             .querySelector(".upload-dropdown")
@@ -47,7 +47,7 @@ document
     });
 
 document
-    .querySelector("div.notification-button")
+    .querySelector(".notification-button")
     .addEventListener("click", function() {
         document
             .querySelector(".notification-dropdown")
@@ -68,7 +68,7 @@ document
 
         if (!subDropdownExist) {
             document
-                .querySelector("div.profile-wrapper > div.main-profile-dropdown")
+                .querySelector(".profile-wrapper > .main-profile-dropdown")
                 .classList.toggle("hidden");
         }
     });
@@ -79,12 +79,12 @@ function processSubDropdown(dropdownField) {
         document.querySelector(".main-profile-dropdown").classList.remove("hidden")
     })
 
-    document.querySelector(`div.main-profile-dropdown .change-${dropdownField}-button`).addEventListener("click", function() {
+    document.querySelector(`.main-profile-dropdown .change-${dropdownField}-button`).addEventListener("click", function() {
         document
-            .querySelector("div.profile-wrapper > div.main-profile-dropdown")
+            .querySelector(".profile-wrapper > .main-profile-dropdown")
             .classList.add("hidden");
         document
-            .querySelector(`div.profile-wrapper > div.change-${dropdownField}-dropdown`)
+            .querySelector(`.profile-wrapper > .change-${dropdownField}-dropdown`)
             .classList.remove("hidden");
     })
 }
@@ -98,7 +98,7 @@ processSubDropdown("restrict-mode")
 document.querySelector(".start-header i.ti-menu").addEventListener("click", function() {
     console.log(this)
     if(window.innerWidth < 1280){
-        document.querySelector("div.modal-sidebar").classList.toggle("hidden");
+        document.querySelector(".modal-sidebar").classList.toggle("hidden");
     } else {
         console.log("ok")
         document.querySelector(".big-sidebar").classList.toggle("xl:block");
@@ -110,7 +110,7 @@ document.querySelector(".start-header i.ti-menu").addEventListener("click", func
 
 document.querySelector("i.ti-menu.hide-modal-sidebar").addEventListener("click", function() {
     if(window.innerWidth < 1280){
-        document.querySelector("div.modal-sidebar").classList.toggle("hidden");
+        document.querySelector(".modal-sidebar").classList.toggle("hidden");
     }
 });
 
@@ -185,14 +185,14 @@ handleToggleButtonSidebar(".big-sidebar")
 
 function adjustSidebar(){
     if (window.innerWidth < 640){
-        if (!document.querySelector("div.mini-sidebar").classList.contains("hidden")){
-            document.querySelector("div.mini-sidebar").classList.add("hidden")
+        if (!document.querySelector(".mini-sidebar").classList.contains("hidden")){
+            document.querySelector(".mini-sidebar").classList.add("hidden")
         }
     }
     
     if (window.innerWidth > 1280){
-        if (!document.querySelector("div.modal-sidebar").classList.contains("hidden")){
-            document.querySelector("div.modal-sidebar").classList.add("hidden")
+        if (!document.querySelector(".modal-sidebar").classList.contains("hidden")){
+            document.querySelector(".modal-sidebar").classList.add("hidden")
         }
     }
 }
