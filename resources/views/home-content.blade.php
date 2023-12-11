@@ -1,32 +1,32 @@
-<ul class="suggest flex items-center justify-start no-wrap h-[56px] overflow-x-auto m-2">
-    <li class="text-white bg-[#0f0f0f] px-4 py-1 rounded-lg mx-2 cursor-pointer whitespace-nowrap">
+<ul class="suggest flex items-center justify-start no-wrap h-[45px] sm:h-[56px] overflow-x-auto m-2">
+    <li class="text-[10px] sm:text-[14px] text-white bg-[#0f0f0f] px-4 py-1 rounded-lg mx-1 sm:mx-2 cursor-pointer whitespace-nowrap">
         Tất cả
     </li>
-    <li class="bg-[rgba(0,0,0,0.05)] px-4 py-1 rounded-lg mx-2 cursor-pointer whitespace-nowrap">
+    <li class="text-[10px] sm:text-[14px] bg-[rgba(0,0,0,0.05)] px-4 py-1 rounded-lg mx-1 sm:mx-2 cursor-pointer whitespace-nowrap">
         Âm nhạc
     </li>
-    <li class="bg-[rgba(0,0,0,0.05)] px-4 py-1 rounded-lg mx-2 cursor-pointer whitespace-nowrap">
+    <li class="text-[10px] sm:text-[14px] bg-[rgba(0,0,0,0.05)] px-4 py-1 rounded-lg mx-1 sm:mx-2 cursor-pointer whitespace-nowrap">
         Danh sách kết hợp
     </li>
-    <li class="bg-[rgba(0,0,0,0.05)] px-4 py-1 rounded-lg mx-2 cursor-pointer whitespace-nowrap">
+    <li class="text-[10px] sm:text-[14px] bg-[rgba(0,0,0,0.05)] px-4 py-1 rounded-lg mx-1 sm:mx-2 cursor-pointer whitespace-nowrap">
         Trực tiếp
     </li>
-    <li class="bg-[rgba(0,0,0,0.05)] px-4 py-1 rounded-lg mx-2 cursor-pointer whitespace-nowrap">
+    <li class="text-[10px] sm:text-[14px] bg-[rgba(0,0,0,0.05)] px-4 py-1 rounded-lg mx-1 sm:mx-2 cursor-pointer whitespace-nowrap">
         Trò chơi
     </li>
-    <li class="bg-[rgba(0,0,0,0.05)] px-4 py-1 rounded-lg mx-2 cursor-pointer whitespace-nowrap">
+    <li class="text-[10px] sm:text-[14px] bg-[rgba(0,0,0,0.05)] px-4 py-1 rounded-lg mx-1 sm:mx-2 cursor-pointer whitespace-nowrap">
         Tin tức
     </li>
-    <li class="bg-[rgba(0,0,0,0.05)] px-4 py-1 rounded-lg mx-2 cursor-pointer whitespace-nowrap">
+    <li class="text-[10px] sm:text-[14px] bg-[rgba(0,0,0,0.05)] px-4 py-1 rounded-lg mx-1 sm:mx-2 cursor-pointer whitespace-nowrap">
         Toán học
     </li>
-    <li class="bg-[rgba(0,0,0,0.05)] px-4 py-1 rounded-lg mx-2 cursor-pointer whitespace-nowrap">
+    <li class="text-[10px] sm:text-[14px] bg-[rgba(0,0,0,0.05)] px-4 py-1 rounded-lg mx-1 sm:mx-2 cursor-pointer whitespace-nowrap">
         Bóng đá
     </li>
-    <li class="bg-[rgba(0,0,0,0.05)] px-4 py-1 rounded-lg mx-2 cursor-pointer whitespace-nowrap">
+    <li class="text-[10px] sm:text-[14px] bg-[rgba(0,0,0,0.05)] px-4 py-1 rounded-lg mx-1 sm:mx-2 cursor-pointer whitespace-nowrap">
         Đọc rap
     </li>
-    <li class="bg-[rgba(0,0,0,0.05)] px-4 py-1 rounded-lg mx-2 cursor-pointer whitespace-nowrap">
+    <li class="text-[10px] sm:text-[14px] bg-[rgba(0,0,0,0.05)] px-4 py-1 rounded-lg mx-1 sm:mx-2 cursor-pointer whitespace-nowrap">
         Lập trình
     </li>
 </ul>
@@ -840,13 +840,13 @@
         </div>
 
         <div class="show-more-short text-center my-4 border-t-1 border-b-1 block relative">
-            <div class="show-more-short-button border text-lg px-16 py-2 rounded-l-full rounded-r-full cursor-pointer bg-white hover:bg-slate-300 inline-block mx-auto no-wrap">
-                <span class="mr-2">Hiện thêm</span>
-                <i class="ti-angle-down"></i>
+            <div class="show-more-short-button border px-4 py-1 sm:px-16 sm:py-2 rounded-l-full rounded-r-full cursor-pointer bg-white hover:bg-slate-300 inline-block mx-auto no-wrap">
+                <span class="sm:mr-2 sm:text-sm text-[10px]">Hiện thêm</span>
+                <i class="ti-angle-down w-[10px] h-[10px]"></i>
             </div>
-            <div class="show-less-short-button hidden border text-lg px-16 py-2 rounded-l-full rounded-r-full cursor-pointer bg-white hover:bg-slate-300 inline-block mx-auto no-wrap">
-                <span class="mr-2">Ẩn bớt</span>
-                <i class="ti-angle-up"></i>
+            <div class="show-less-short-button hidden border px-4 py-1 sm:px-16 sm:py-2 rounded-l-full rounded-r-full cursor-pointer bg-white hover:bg-slate-300 inline-block mx-auto no-wrap">
+                <span class="sm:mr-2 sm:text-sm text-[10px]">Ẩn bớt</span>
+                <i class="ti-angle-up w-[10px] h-[10px]"></i>
             </div>
         </div>
     </div>

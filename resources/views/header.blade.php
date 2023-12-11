@@ -1,7 +1,7 @@
 <div class="flex items-center justify-between">
     <!-- start header  -->
     <div class="start-header flex items-center ">
-        <i class="ti-menu p-1 sm:p-4 cursor-pointer hover:bg-[#ccc] rounded-full"></i>
+        <i class="ti-menu p-2 sm:p-4 cursor-pointer hover:bg-[#ccc] rounded-full"></i>
         <div class="cursor-pointer ytb-logo">
             <svg xmlns="http://www.w3.org/2000/svg" class="external-icon" viewBox="0 0 90 20" focusable="false" width="90" height="20" class="inline">
                 <svg viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
@@ -35,23 +35,23 @@
 
     <!-- Center header  -->
     <div class="center-header items-center justify-center mx-auto container hidden sm:inline-flex flex">
-        <button class="back-btn hidden py-1 px-2 sm:py-3 sm:px-4 rounded-full bg-[#f8f8f8] cursor-pointer hover:bg-[#ccc] mr-4">
+        <button class="back-btn hidden py-1 px-2 sm:py-3 sm:px-4 rounded-full bg-[#f8f8f8] cursor-pointer hover:bg-[#ccc] mr-4 self-start">
             <i class="ti-arrow-left"></i>
         </button>
 
         <div class="flex w-[80%] items-center">
-            <div class="input-search-bar p-1 sm:p-3 space-x-0 sm:space-x-2 border rounded-l-full w-[100%]">
-                <i class="ti-search w-[10x] h-[10px] sm:w-[16px] sm:h-[16px]"></i>
-                <input name="search" type="text" class="border-0 w-[calc(100%-60px)] outline-none" placeholder="Tìm kiếm" />
-                <img src="{{asset('img/keyboard.png')}}" class="inline cursor-pointer">
+            <div class="input-search-bar py-2 px-3 sm:p-3 space-x-0 sm:space-x-2 border rounded-l-full w-[100%] flex items-center">
+                <!-- <i class="ti-search w-[10x] h-[10px] sm:w-[16px] sm:h-[16px]"></i> -->
+                <input name="search" type="text" class="border-0 w-[calc(100%-15px)] outline-none text-[12px]" placeholder="Tìm kiếm" />
+                <img src="{{asset('img/keyboard.png')}}" class="inline cursor-pointer w-[15px] h-[8px]">
             </div>
 
-            <button class="sm:w-[30%] min-w-[30px] sm:min-w-[50px] sm:max-w-[80px] h-[34px] sm:h-[50.47px] bg-[#f8f8f8f8] rounded-r-full mr-4 hover:bg-[#ccc]">
-                <i class="ti-search"></i>
+            <button class="py-[7px] sm:w-[30%] min-w-[40px] sm:min-w-[50px] sm:max-w-[80px] sm:h-[50.47px] bg-[#f8f8f8f8] rounded-r-full mr-4 hover:bg-[#ccc]">
+                <i class="ti-search w-[18px] h-[18px]"></i>
             </button>
         </div>
 
-        <button class="p-1 sm:p-3 rounded-full bg-[#f8f8f8] cursor-pointer hover:bg-[#ccc]">
+        <button class="py-1 px-1 sm:p-3 rounded-full bg-[#f8f8f8] cursor-pointer hover:bg-[#ccc]">
             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                 <path d="M12 3c-1.66 0-3 1.37-3 3.07v5.86c0 1.7 1.34 3.07 3 3.07s3-1.37 3-3.07V6.07C15 4.37 13.66 3 12 3zm6.5 9h-1c0 3.03-2.47 5.5-5.5 5.5S6.5 15.03 6.5 12h-1c0 3.24 2.39 5.93 5.5 6.41V21h2v-2.59c3.11-.48 5.5-3.17 5.5-6.41z">
                 </path>
@@ -60,21 +60,21 @@
     </div>
 
     <!-- End header  -->
-    <ul class="end-header flex items-center font-serif text-sm header-end lg:space-x-2 xl:space-x-2 sm:space-x-1">
+    <ul class="end-header flex items-center font-serif text-sm header-end space-x-3 lg:space-x-2 xl:space-x-2 sm:space-x-1">
         <li class="show-search-bar search-btn sm:hidden">
             <i class="ti-search cursor-pointer hover:bg-[#ccc] p-1 sm:p-4 rounded-full"></i>
         </li>
 
-        <li class="microphone-btn sm:hidden">
+        <!-- <li class="microphone-btn sm:hidden">
             <div class="p-1 sm:p-3 rounded-full bg-[#f8f8f8] cursor-pointer hover:bg-[#ccc]">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px] sm:w-[24px] sm:h-[20px]" viewBox="0 0 24 24" focusable="false">
                     <path d="M12 3c-1.66 0-3 1.37-3 3.07v5.86c0 1.7 1.34 3.07 3 3.07s3-1.37 3-3.07V6.07C15 4.37 13.66 3 12 3zm6.5 9h-1c0 3.03-2.47 5.5-5.5 5.5S6.5 15.03 6.5 12h-1c0 3.24 2.39 5.93 5.5 6.41V21h2v-2.59c3.11-.48 5.5-3.17 5.5-6.41z">
                     </path>
                 </svg>
             </div>
-        </li>
+        </li> -->
 
-        <li class="upload-wrapper relative">
+        <li class="upload-wrapper relative hidden sm:block">
             <div class="group hover:bg-[#ccc] upload-btn rounded-full p-1 sm:p-3 button-dropdown cursor-pointer relative">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px] sm:w-[24px] sm:h-[20px]" viewBox="0 0 24 24" focusable="false">
                     <path d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z">
@@ -109,7 +109,7 @@
             </ul>
         </li>
 
-        <li class="notifications-wrapper relative">
+        <li class="notifications-wrapper relative hidden sm:block">
             <div class="group hover:bg-[#ccc] notification-button rounded-full p-1 sm:p-3 button-dropdown cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" class="w-[20px] h-[20px] sm:w-[24px] sm:h-[20px]" viewBox="0 0 24 24" focusable="false">
                     <path d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm10-2.65V19H4v-1.65l2-1.88v-5.15C6 7.4 7.56 5.1 10 4.34v-.38c0-1.42 1.49-2.5 2.99-1.76.65.32 1.01 1.03 1.01 1.76v.39c2.44.75 4 3.06 4 5.98v5.15l2 1.87zm-1 .42-2-1.88v-5.47c0-2.47-1.19-4.36-3.13-5.1-1.26-.53-2.64-.5-3.84.03C8.15 6.11 7 7.99 7 10.42v5.47l-2 1.88V18h14v-.23z">
