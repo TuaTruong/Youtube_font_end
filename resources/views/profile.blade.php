@@ -45,7 +45,6 @@
         .profile-banner {
             background-image: url("{{ asset('img/profile-banner.jpg') }}");
             background-size: cover;
-
         }
     </style>
     <title>Youtube</title>

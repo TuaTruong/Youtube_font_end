@@ -129,7 +129,6 @@
     </div>
     <!-- End sidebar -->
 
-
     <div class="content-wrapper px-[10px] sm:ml-[80px] sm:w-[calc(100%-80px)] w-[100%] xl:ml-[250px] xl:w-[calc(100%-250px)] mt-[40px] sm:mt-[80px]" style="display: inline-block">
         @include("home-content")
     </div>
