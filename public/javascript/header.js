@@ -1,23 +1,4 @@
 document
-    .querySelector(".upload-btn")
-    .addEventListener("click", function() {
-        console.log(document
-            .querySelector("ul.upload-dropdown")
-            .classList)
-        document
-            .querySelector("ul.upload-dropdown")
-            .classList.toggle("hidden");
-    });
-
-document
-    .querySelector(".notification-button")
-    .addEventListener("click", function() {
-        document
-            .querySelector(".notification-dropdown")
-            .classList.toggle("hidden");
-    });
-
-document
     .querySelector("img.show-profile")
     .addEventListener("click", function() {
         let subDropdownExist = false;

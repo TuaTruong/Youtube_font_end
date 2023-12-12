@@ -33,6 +33,21 @@
             .dropdown {
                 z-index: 10;
             }
+
+            div.sharing-button::after {
+                position: absolute;
+                content: "";
+                display: block;
+                height: 1px;
+                width: 100%;
+                margin: 8px 0;
+                bottom: -15px;
+                left: 0;
+                background: #000;
+                cursor: pointer;
+            }
+
+
         </style>
 
         <div class="content flex flex-col justify-center px-2 w-[100%] sm:w-[80%] space-x-1 sm:space-y-4 mx-auto">

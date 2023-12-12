@@ -44,7 +44,7 @@
                 <div class="input-search-bar py-[6px] px-3 sm:p-3 space-x-0 sm:space-x-2 border rounded-l-full w-[100%] flex items-center">
                     <!-- <i class="ti-search w-[10x] h-[10px] sm:w-[16px] sm:h-[16px]"></i> -->
                     <input name="search" type="text" class="border-0 w-[calc(100%-15px)] outline-none text-[12px]" placeholder="Tìm kiếm" />
-                    <img src="{{asset('img/keyboard.png')}}" class="inline cursor-pointer w-[15px] h-[8px] sm:w-[19px] h-[11px]">
+                    <img src="{{asset('img/keyboard.png')}}" class="inline cursor-pointer w-[15px] h-[8px] sm:w-[19px] sm:h-[11px]">
                 </div>
 
                 <button class="py-[6px] sm:w-[30%] min-w-[40px] sm:min-w-[50px] sm:max-w-[80px] sm:h-[44.5px] bg-[#f8f8f8f8] rounded-r-full mr-4 hover:bg-[#ccc]">
@@ -76,7 +76,7 @@
             </li> -->
 
             <li class="upload-wrapper relative hidden sm:block">
-                <div class="group hover:bg-[#ccc] upload-btn rounded-full p-1 sm:p-3 button-dropdown cursor-pointer relative">
+                <div data-dropdown-toggle="upload-dropdown" class="group hover:bg-[#ccc] rounded-full p-1 sm:p-3 button-dropdown cursor-pointer relative">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px] sm:w-[24px] sm:h-[20px]" viewBox="0 0 24 24" focusable="false">
                         <path d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z">
                         </path>
@@ -84,7 +84,7 @@
 
                     <span class="group-hover:block hidden absolute text-[13px] text-center top-14 right-[50%] translate-x-[50%] bg-slate-400 py-1 px-2 rounded-[3px] arial-label">Tạo</span>
                 </div>
-                <ul class="upload-dropdown dropdown absolute hidden w-40 top-11 right-0 bg-white border ti-video-camera-dropdown">
+                <ul id="upload-dropdown" class="dropdown absolute hidden w-40 top-11 right-0 bg-white border ti-video-camera-dropdown">
                     <li class="flex space-x-2 items-center p-2 cursor-pointer hover:bg-[#f8f8f8]">
                         <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                             <path d="m10 8 6 4-6 4V8zm11-5v18H3V3h18zm-1 1H4v16h16V4z"></path>
@@ -111,7 +111,7 @@
             </li>
 
             <li class="notifications-wrapper relative hidden sm:block">
-                <div class="group hover:bg-[#ccc] notification-button rounded-full p-1 sm:p-3 button-dropdown cursor-pointer">
+                <div data-dropdown-toggle="notification-dropdown" class="group hover:bg-[#ccc] notification-button rounded-full p-1 sm:p-3 button-dropdown cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" class="w-[20px] h-[20px] sm:w-[24px] sm:h-[20px]" viewBox="0 0 24 24" focusable="false">
                         <path d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm10-2.65V19H4v-1.65l2-1.88v-5.15C6 7.4 7.56 5.1 10 4.34v-.38c0-1.42 1.49-2.5 2.99-1.76.65.32 1.01 1.03 1.01 1.76v.39c2.44.75 4 3.06 4 5.98v5.15l2 1.87zm-1 .42-2-1.88v-5.47c0-2.47-1.19-4.36-3.13-5.1-1.26-.53-2.64-.5-3.84.03C8.15 6.11 7 7.99 7 10.42v5.47l-2 1.88V18h14v-.23z">
                         </path>
@@ -119,7 +119,7 @@
                     <span class="w-[90px] group-hover:inline-block hidden absolute text-[13px] text-center top-14 right-[50%] translate-x-[50%] bg-slate-400 py-1 px-2 rounded-[3px]">Thông
                         báo</span>
                 </div>
-                <ul class="dropdown absolute notification-dropdown hidden w-[240px] sm:w-[430px] border bg-white top-11 right-0 max-h-[642px] overflow-y-auto">
+                <ul id="notification-dropdown" class="dropdown absolute notification-dropdown hidden w-[240px] sm:w-[430px] border bg-white top-11 right-0 max-h-[642px] overflow-y-auto">
                     <li class="flex justify-between p-2 sm:p-4 items-center border-b-2">
                         <span>Thông báo</span>
                         <i class="ti-settings p-2 cursor-pointer hover:bg-[#ccc] rounded-full"></i>
@@ -398,9 +398,6 @@
                             </ul>
                         </div>
                     </li>
-
-
-
                 </ul>
             </li>
 

@@ -55,8 +55,6 @@
                 grid-template-rows: 1fr;
             }
         }
-
-
     </style>
 @stop
 
@@ -191,14 +189,14 @@
                 © Bản quyền Video thuộc về Yêu Lành/H2O Music <br>
             </p>
 
-            <div class="channel-profile flex space-x-2 my-4 items-center">
+            <a href="/profile" class="channel-profile flex space-x-2 my-4 items-center">
                 <img src="{{ asset('img/avt.jpg') }}"
                     class="rounded-full self-start sm:h-[96px] sm:w-[96px] h-[60px] w-[60px]">
                 <div class="channel-name-follow flex flex-col space-y-1 p-1">
                     <div class="font-bold text-lg sm:text-xl">Một Bản Tình Ca</div>
                     <div class="font-thin text-[14px] sm:text-[18px] text-slate-500">181 N người đăng ký</div>
                 </div>
-            </div>
+            </a>
             <div class="flex space-x-3">
                 <div
                     class="flex w-[40%] justify-center items-center border bottom-3 rounded-l-full rounded-r-full cursor-pointer hover:bg-slate-300 py-2">
@@ -1616,7 +1614,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 @stop

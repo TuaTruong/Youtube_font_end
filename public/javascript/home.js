@@ -3,8 +3,6 @@
 document.querySelectorAll(".video-item").forEach(notiEl =>{
     notiEl.querySelectorAll(".video-actions .button-dropdown").forEach(el =>{
         el.addEventListener("click",function(){
-            console.log("click")
-            console.log(this.parentNode)
             this.parentNode.querySelector(".dropdown").classList.toggle("hidden")
         })
  })
