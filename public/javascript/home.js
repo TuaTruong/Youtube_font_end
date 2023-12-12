@@ -94,6 +94,12 @@ function adjustShortGridItem() {
         }
     }
 }
+
+document.querySelector("i.ti-menu.hide-modal-sidebar").addEventListener("click", function() {
+    if(window.innerWidth < 1280){
+        document.querySelector(".modal-sidebar").classList.toggle("hidden");
+    }
+});
 function adjustSidebar(){
     let windowWidth = window.innerWidth;
     let contentWrapper = document.querySelector(".content-wrapper");

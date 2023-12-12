@@ -41,7 +41,7 @@
             </button>
 
             <div class="flex w-[80%] sm:w-[60%] items-center">
-                <div class="input-search-bar py-2 px-3 sm:p-3 space-x-0 sm:space-x-2 border rounded-l-full w-[100%] flex items-center">
+                <div class="input-search-bar py-[6px] px-3 sm:p-3 space-x-0 sm:space-x-2 border rounded-l-full w-[100%] flex items-center">
                     <!-- <i class="ti-search w-[10x] h-[10px] sm:w-[16px] sm:h-[16px]"></i> -->
                     <input name="search" type="text" class="border-0 w-[calc(100%-15px)] outline-none text-[12px]" placeholder="Tìm kiếm" />
                     <img src="{{asset('img/keyboard.png')}}" class="inline cursor-pointer w-[15px] h-[8px] sm:w-[19px] h-[11px]">
@@ -63,7 +63,7 @@
         <!-- End header  -->
         <ul class="end-header flex items-center font-serif text-sm header-end space-x-3 lg:space-x-2 xl:space-x-2 sm:space-x-1">
             <li class="show-search-bar search-btn sm:hidden">
-                <i class="ti-search cursor-pointer hover:bg-[#ccc] p-1 sm:p-4 rounded-full"></i>
+                <i class="ti-search cursor-pointer hover:bg-[#ccc] p-[7px] sm:p-4 rounded-full"></i>
             </li>
 
             <!-- <li class="microphone-btn sm:hidden">
@@ -84,7 +84,7 @@
 
                     <span class="group-hover:block hidden absolute text-[13px] text-center top-14 right-[50%] translate-x-[50%] bg-slate-400 py-1 px-2 rounded-[3px] arial-label">Tạo</span>
                 </div>
-                <ul class="upload-dropdown dropdown absolute hidden w-40 mt-3 top-5 right-5 bg-white border ti-video-camera-dropdown">
+                <ul class="upload-dropdown dropdown absolute hidden w-40 top-11 right-0 bg-white border ti-video-camera-dropdown">
                     <li class="flex space-x-2 items-center p-2 cursor-pointer hover:bg-[#f8f8f8]">
                         <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false">
                             <path d="m10 8 6 4-6 4V8zm11-5v18H3V3h18zm-1 1H4v16h16V4z"></path>
@@ -119,7 +119,7 @@
                     <span class="w-[90px] group-hover:inline-block hidden absolute text-[13px] text-center top-14 right-[50%] translate-x-[50%] bg-slate-400 py-1 px-2 rounded-[3px]">Thông
                         báo</span>
                 </div>
-                <ul class="dropdown absolute notification-dropdown hidden w-[240px] sm:w-[430px] border bg-white top-8 right-0 max-h-[642px] overflow-y-auto">
+                <ul class="dropdown absolute notification-dropdown hidden w-[240px] sm:w-[430px] border bg-white top-11 right-0 max-h-[642px] overflow-y-auto">
                     <li class="flex justify-between p-2 sm:p-4 items-center border-b-2">
                         <span>Thông báo</span>
                         <i class="ti-settings p-2 cursor-pointer hover:bg-[#ccc] rounded-full"></i>
@@ -532,7 +532,7 @@
                     </div>
                 </div>
 
-                <div class="main-profile-dropdown dropdown absolute hidden right-4 top-10 bg-white w-[240px] sm:w-[268px] text-[12px] sm:text-sm h-[calc(100vh-90px)] font-sans overflow-y-auto">
+                <div class="main-profile-dropdown dropdown absolute hidden right-0 top-11 bg-white w-[240px] sm:w-[268px] text-[12px] sm:text-sm h-[calc(100vh-90px)] font-sans overflow-y-auto">
                     <div class="identifier flex items-center p-4 border-b-2">
                         <img src="{{asset('img/T.jpg')}}" width="42" height="42" class="rounded-full mr-4 fle" />
                         <div class="flex flex-col">

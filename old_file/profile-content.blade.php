@@ -326,7 +326,6 @@
                                     </svg>
                                     <span>Báo vi phạm</span>
                                 </div>
-
                             </div>
                         </div>
                     </div>

@@ -53,8 +53,3 @@ function handleToggleButtonSidebar(parrentSelector){
 handleToggleButtonSidebar(".modal-sidebar")
 handleToggleButtonSidebar(".big-sidebar")
 
-document.querySelector("i.ti-menu.hide-modal-sidebar").addEventListener("click", function() {
-    if(window.innerWidth < 1280){
-        document.querySelector(".modal-sidebar").classList.toggle("hidden");
-    }
-});

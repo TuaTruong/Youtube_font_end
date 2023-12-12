@@ -7,9 +7,6 @@ document
         document
             .querySelector("ul.upload-dropdown")
             .classList.toggle("hidden");
-        console.log(document
-            .querySelector("ul.upload-dropdown")
-            .classList)
     });
 
 document
