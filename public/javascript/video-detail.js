@@ -1,3 +1,5 @@
+document.querySelector(".big-sidebar").classList.add("hidden")
+
 document.querySelector(".show-search-bar.search-btn").addEventListener("click",function(){
     if (window.innerWidth < 640){
         document.querySelector(".end-header").classList.add("hidden")

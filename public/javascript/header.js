@@ -1,9 +1,15 @@
 document
     .querySelector(".upload-btn")
     .addEventListener("click", function() {
+        console.log(document
+            .querySelector("ul.upload-dropdown")
+            .classList)
         document
-            .querySelector(".upload-dropdown")
+            .querySelector("ul.upload-dropdown")
             .classList.toggle("hidden");
+        console.log(document
+            .querySelector("ul.upload-dropdown")
+            .classList)
     });
 
 document
@@ -54,3 +60,32 @@ processSubDropdown("language")
 processSubDropdown("destination")
 processSubDropdown("restrict-mode")
 
+document.querySelector(".show-search-bar.search-btn").addEventListener("click",function(){
+    if (window.innerWidth < 640){
+        document.querySelector(".end-header").classList.add("hidden")
+        document.querySelector(".start-header").classList.add("hidden")
+        document.querySelector(".center-header").classList.remove("hidden")
+        document.querySelector(".center-header").classList.remove("justify-center")
+        document.querySelector(".center-header").classList.add("justify-between")
+        document.querySelector(".center-header .back-btn").classList.remove("hidden")
+    }}
+)
+
+document.querySelector(".center-header .back-btn").addEventListener("click",function(){
+    if (window.innerWidth < 640){
+        document.querySelector(".end-header").classList.remove("hidden")
+        document.querySelector(".start-header").classList.remove("hidden")
+        document.querySelector(".center-header").classList.add("hidden")
+        document.querySelector(".center-header").classList.add("justify-center")
+        document.querySelector(".center-header").classList.remove("justify-between")
+        document.querySelector(".center-header .back-btn").classList.add("hidden")
+    }}
+)
+
+document.querySelectorAll(".notification-item").forEach(notiEl =>{
+    notiEl.querySelectorAll(".ti-more.button-dropdown").forEach(el =>{
+        el.addEventListener("click",function(){
+            this.parentNode.querySelector(".notification-item-dropdown").classList.toggle("hidden")
+        })
+ })
+})

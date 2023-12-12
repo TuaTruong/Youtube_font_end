@@ -1,9 +1,6 @@
-document.querySelectorAll(".notification-item").forEach(notiEl =>{
-    notiEl.querySelectorAll(".ti-more.button-dropdown").forEach(el =>{
-        el.addEventListener("click",function(){
-            this.parentNode.querySelector(".notification-item-dropdown").classList.toggle("hidden")
-        })
- })
+document.querySelector(".show-search-video").addEventListener("click",function(){
+    this.parentNode.querySelector("input").classList.toggle("hidden")
+    this.parentNode.querySelector("input").focus()
 })
 
 document.querySelectorAll(".video-item").forEach(notiEl =>{
@@ -16,103 +13,23 @@ document.querySelectorAll(".video-item").forEach(notiEl =>{
  })
 })
 
-document.querySelector(".show-search-bar.search-btn").addEventListener("click",function(){
-    if (window.innerWidth < 640){
-        document.querySelector(".end-header").classList.add("hidden")
-        document.querySelector(".start-header").classList.add("hidden")
-        document.querySelector(".center-header").classList.remove("hidden")
-        document.querySelector(".center-header").classList.remove("justify-center")
-        document.querySelector(".center-header").classList.add("justify-between")
-        document.querySelector(".center-header .back-btn").classList.remove("hidden")
-    }}
-)
-
-document.querySelector(".center-header .back-btn").addEventListener("click",function(){
-    if (window.innerWidth < 640){
-        document.querySelector(".end-header").classList.remove("hidden")
-        document.querySelector(".start-header").classList.remove("hidden")
-        document.querySelector(".center-header").classList.add("hidden")
-        document.querySelector(".center-header").classList.add("justify-center")
-        document.querySelector(".center-header").classList.remove("justify-between")
-        document.querySelector(".center-header .back-btn").classList.add("hidden")
-    }}
-)
-
-document
-    .querySelector(".upload-btn")
-    .addEventListener("click", function() {
-        document
-            .querySelector(".upload-dropdown")
-            .classList.toggle("hidden");
-    });
-
-document
-    .querySelector(".notification-button")
-    .addEventListener("click", function() {
-        document
-            .querySelector(".notification-dropdown")
-            .classList.toggle("hidden");
-    });
-
-document
-    .querySelector("img.show-profile")
-    .addEventListener("click", function() {
-        let subDropdownExist = false;
-        let subDropdowns = document.querySelectorAll(".sub-dropdown")
-        subDropdowns.forEach(el => {
-            if (!el.classList.contains("hidden")) {
-                subDropdownExist = true
-                el.classList.add("hidden")
-            }
-        })
-
-        if (!subDropdownExist) {
-            document
-                .querySelector(".profile-wrapper > .main-profile-dropdown")
-                .classList.toggle("hidden");
-        }
-    });
-
-function processSubDropdown(dropdownField) {
-    document.querySelector(`i.back-main-dropdown-button.change-${dropdownField}-button`).addEventListener("click", el => {
-        document.querySelector(`.change-${dropdownField}-dropdown`).classList.add("hidden")
-        document.querySelector(".main-profile-dropdown").classList.remove("hidden")
-    })
-
-    document.querySelector(`.main-profile-dropdown .change-${dropdownField}-button`).addEventListener("click", function() {
-        document
-            .querySelector(".profile-wrapper > .main-profile-dropdown")
-            .classList.add("hidden");
-        document
-            .querySelector(`.profile-wrapper > .change-${dropdownField}-dropdown`)
-            .classList.remove("hidden");
-    })
-}
-processSubDropdown("account")
-processSubDropdown("ui")
-processSubDropdown("language")
-processSubDropdown("destination")
-processSubDropdown("restrict-mode")
-
-
 document.querySelector(".start-header i.ti-menu").addEventListener("click", function() {
-    console.log(this)
     if(window.innerWidth < 1280){
         document.querySelector(".modal-sidebar").classList.toggle("hidden");
     } else {
-        console.log("ok")
-        document.querySelector(".big-sidebar").classList.toggle("xl:block");
-        document.querySelector(".content-wrapper").classList.toggle("xl:ml-[240px]");
-        document.querySelector(".content-wrapper").classList.toggle("xl:w-[calc(100%-240px)]");
-        document.querySelector(".mini-sidebar").classList.toggle("hidden");
+        bigSidebar  = document.querySelector(".big-sidebar");
+        miniSidebar = document.querySelector(".mini-sidebar");
+        if(bigSidebar.classList.contains("hidden")){
+            document.querySelector(".wrapper").style.gridTemplateColumns = "224px 1fr";
+        } else{
+            document.querySelector(".wrapper").style.gridTemplateColumns = "80px 1fr";
+        }
+        bigSidebar.classList.toggle("hidden");
+        miniSidebar.classList.toggle("hidden");
     }
 });
 
-document.querySelector("i.ti-menu.hide-modal-sidebar").addEventListener("click", function() {
-    if(window.innerWidth < 1280){
-        document.querySelector(".modal-sidebar").classList.toggle("hidden");
-    }
-});
+
 
 document.addEventListener("click", function(event) {
     var dropdowns = document.querySelectorAll(".button-dropdown");
@@ -128,71 +45,53 @@ document.addEventListener("click", function(event) {
         }
     });
 });
-function handleToggleButtonSidebar(parrentSelector){
-    document
-    .querySelector(`${parrentSelector} ul.me-sidebar > li.more-button`)
-    .addEventListener("click", function(event) {
-        console.log("ok")
-        let itemCount = document
-            .querySelector(`${parrentSelector} ul.me-sidebar`)
-            .querySelectorAll("li.me-item").length;
-
-        document
-            .querySelector(`${parrentSelector} ul.me-sidebar > li.more-button`)
-            .classList.toggle("hidden");
-        document
-            .querySelector(`${parrentSelector} ul.me-sidebar > li.less-button`)
-            .classList.toggle("hidden");
-
-        for (let i = 0; i <= itemCount - 1; i++) {
-            let meItem = document
-                .querySelector(`${parrentSelector} ul.me-sidebar`)
-                .querySelectorAll("li.me-item")[i];
-            if (meItem.classList.contains("hidden")) {
-                meItem.classList.remove("hidden");
-            }
-        }
-    });
-
-    document
-        .querySelector(`${parrentSelector} ul.me-sidebar > li.less-button`)
-        .addEventListener("click", function(event) {
-            let maxMeItem = 4;
-            let itemCount = document
-                .querySelector(`${parrentSelector} ul.me-sidebar`)
-                .querySelectorAll("li.me-item").length;
-
-            document
-                .querySelector(`${parrentSelector} ul.me-sidebar > li.more-button`)
-                .classList.toggle("hidden");
-            document
-                .querySelector(`${parrentSelector} ul.me-sidebar > li.less-button`)
-                .classList.toggle("hidden");
-
-            for (let i = 0; i <= itemCount - 1; i++) {
-                let meItem = document
-                    .querySelector(`${parrentSelector} ul.me-sidebar`)
-                    .querySelectorAll("li.me-item")[i];
-                if (i >= maxMeItem) {
-                    meItem.classList.add("hidden");
-                }
-            }
-        });
-}
-
-handleToggleButtonSidebar(".modal-sidebar")
-handleToggleButtonSidebar(".big-sidebar")
 
 function adjustSidebar(){
-    if (window.innerWidth < 640){
-        if (!document.querySelector(".mini-sidebar").classList.contains("hidden")){
-            document.querySelector(".mini-sidebar").classList.add("hidden")
+    let windowWidth = window.innerWidth;
+    let contentWrapper = document.querySelector(".content-wrapper");
+    let bigSidebar  = document.querySelector(".big-sidebar");
+    let miniSidebar = document.querySelector(".mini-sidebar");
+
+    if (windowWidth < 640){
+        if (!miniSidebar.classList.contains("hidden")){
+            miniSidebar.classList.add("hidden")
+        }
+        if (!bigSidebar.classList.contains("hidden")){
+            bigSidebar.classList.add("hidden")
+        }
+        
+        if (!contentWrapper.classList.contains("col-span-2")){
+            contentWrapper.classList.add("col-span-2");
         }
     }
     
-    if (window.innerWidth > 1280){
+    if (windowWidth >=640 && windowWidth <= 1280){
+        if (miniSidebar.classList.contains("hidden")){
+            miniSidebar.classList.toggle("hidden");
+            document.querySelector(".wrapper").style.gridTemplateColumns = "80px 1fr";
+        }
+
+        if (!bigSidebar.classList.contains("hidden")){
+            bigSidebar.classList.toggle("hidden");
+        }
+
+        if (contentWrapper.classList.contains("col-span-2")){
+            contentWrapper.classList.remove("col-span-2");
+        }
+    }
+
+    if (windowWidth > 1280){
+        if (contentWrapper.classList.contains("col-span-2")){
+            contentWrapper.classList.remove("col-span-2");
+        }
         if (!document.querySelector(".modal-sidebar").classList.contains("hidden")){
             document.querySelector(".modal-sidebar").classList.add("hidden")
+        }
+        
+
+        if (bigSidebar.classList.contains("hidden") && miniSidebar.classList.contains("hidden")){
+            document.querySelector(".wrapper").style.gridTemplateColumns = "224px 1fr";
+            bigSidebar.classList.toggle("hidden");
         }
     }
 }
@@ -201,4 +100,5 @@ function adjustUI(){
     adjustSidebar();
 }
 
+document.addEventListener("DOMContentLoaded", adjustUI);
 window.addEventListener("resize", adjustUI);
