@@ -11,7 +11,7 @@
 </style>
 
 <div class="content flex flex-col justify-center w-[100%] space-y-4 md:w-[642px] lg:w-[856px] 2xl:w-[1070px] mx-auto">
-    <div class="profile-detail w-[100%]  flex flex-col justify-center space-y-4">
+    <div class="profile-detail w-[100%] flex flex-col justify-center space-y-4">
         <div class="relative w-[100%] h-0 pt-[16.2%] lg:h-[137px] 2xl:h-[172px]">
             <div class="profile-banner absolute left-0 top-0 w-[100%] h-[100%] rounded-xl"></div>
         </div>

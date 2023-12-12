@@ -52,8 +52,6 @@
                 grid-template-rows: 1120px 1fr;
                 grid-column-end: span 1;
             }
-
-
         }
     </style>
     <title>Youtube</title>

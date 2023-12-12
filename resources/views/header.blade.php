@@ -2,7 +2,7 @@
     <!-- start header  -->
     <div class="start-header flex items-center ">
         <i class="ti-menu p-2 sm:p-4 cursor-pointer hover:bg-[#ccc] rounded-full"></i>
-        <div class="cursor-pointer ytb-logo">
+        <a class="cursor-pointer ytb-logo" href="/">
             <svg xmlns="http://www.w3.org/2000/svg" class="external-icon" viewBox="0 0 90 20" focusable="false" width="90" height="20" class="inline">
                 <svg viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
                     <g>
@@ -29,7 +29,7 @@
                     </g>
                 </svg>
             </svg>
-        </div>
+        </a>
         <div class="pb-5 text-xs">VN</div>
     </div>
 
@@ -39,14 +39,14 @@
             <i class="ti-arrow-left"></i>
         </button>
 
-        <div class="flex w-[80%] items-center">
+        <div class="flex w-[80%] sm:w-[60%] items-center">
             <div class="input-search-bar py-2 px-3 sm:p-3 space-x-0 sm:space-x-2 border rounded-l-full w-[100%] flex items-center">
                 <!-- <i class="ti-search w-[10x] h-[10px] sm:w-[16px] sm:h-[16px]"></i> -->
                 <input name="search" type="text" class="border-0 w-[calc(100%-15px)] outline-none text-[12px]" placeholder="Tìm kiếm" />
-                <img src="{{asset('img/keyboard.png')}}" class="inline cursor-pointer w-[15px] h-[8px]">
+                <img src="{{asset('img/keyboard.png')}}" class="inline cursor-pointer w-[15px] h-[8px] sm:w-[19px] h-[11px]">
             </div>
 
-            <button class="py-[7px] sm:w-[30%] min-w-[40px] sm:min-w-[50px] sm:max-w-[80px] sm:h-[50.47px] bg-[#f8f8f8f8] rounded-r-full mr-4 hover:bg-[#ccc]">
+            <button class="py-[6px] sm:w-[30%] min-w-[40px] sm:min-w-[50px] sm:max-w-[80px] sm:h-[44.5px] bg-[#f8f8f8f8] rounded-r-full mr-4 hover:bg-[#ccc]">
                 <i class="ti-search w-[18px] h-[18px]"></i>
             </button>
         </div>
@@ -531,7 +531,7 @@
                 </div>
             </div>
 
-            <div class="main-profile-dropdown dropdown absolute hidden right-4 top-6 sm:top-14 bg-white w-[240px] sm:w-[268px] text-[12px] sm:text-sm  h-screen sm:h-[810px] font-sans overflow-y-auto">
+            <div class="main-profile-dropdown dropdown absolute hidden right-4 top-10 bg-white w-[240px] sm:w-[268px] text-[12px] sm:text-sm h-[calc(100vh-90px)] font-sans overflow-y-auto">
                 <div class="identifier flex items-center p-4 border-b-2">
                     <img src="{{asset('img/T.jpg')}}" width="42" height="42" class="rounded-full mr-4 fle" />
                     <div class="flex flex-col">
