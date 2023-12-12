@@ -46,6 +46,17 @@
                 background: #000;
                 cursor: pointer;
             }
+            .dropdown.absolute{
+                background: red;
+                position: absolute;
+                z-index: 1;
+               left:15px;
+            }
+            .centent{
+                position: relative;
+                z-index: 0;
+            }
+
 
         </style>
 

@@ -45,7 +45,7 @@
     <div class="w-[224px] px-1 sm:p-2 h-screen overflow-y-scroll text-[13px] bg-white">
         <div class="flex items-center border-b-[1px] pb-1 sm:py-1 my-1">
             <i class="ti-menu hide-modal-sidebar p-2 sm:p-4 cursor-pointer hover:bg-[#ccc] rounded-full mr-1"></i>
-            <a class="cursor-pointer ytb-logo" href="/video-detail">
+            <a class="cursor-pointer ytb-logo" href="/">
                 <svg xmlns="http://www.w3.org/2000/svg" class="external-icon" viewBox="0 0 90 20"
                     focusable="false" width="90" height="20" class="inline">
                     <svg viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet"
