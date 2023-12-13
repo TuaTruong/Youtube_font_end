@@ -24,23 +24,6 @@ document.querySelector(".start-header i.ti-menu").addEventListener("click", func
     }
 });
 
-
-
-document.addEventListener("click", function(event) {
-    var dropdowns = document.querySelectorAll(".button-dropdown");
-    dropdowns.forEach(function(dropdownButton) {
-        if (!dropdownButton.parentElement.contains(event.target)) {
-            let dropdownElements =
-                dropdownButton.parentElement.querySelectorAll(".dropdown");
-            dropdownElements.forEach(dropdownElement => {
-                if (!dropdownElement.classList.contains("hidden")) {
-                    dropdownElement.classList.add("hidden");
-                }
-            })
-        }
-    });
-});
-
 document.querySelector(".show-more-short-button").addEventListener("click", function() {
     document.querySelector(".show-more-short-button").classList.toggle("hidden")
     document.querySelector(".show-less-short-button").classList.toggle("hidden")
@@ -69,6 +52,13 @@ document.querySelector(".show-less-short-button").addEventListener("click", func
     }
 })
 
+document.querySelector("i.ti-menu.hide-modal-sidebar").addEventListener("click", function() {
+    if(window.innerWidth < 1280){
+        document.querySelector(".modal-sidebar").classList.toggle("hidden");
+    }
+});
+
+
 function adjustShortGridItem() {
     if (document.querySelector(".show-less-short-button").classList.contains("hidden")) {
         let windowWidth = window.innerWidth;
@@ -79,7 +69,7 @@ function adjustShortGridItem() {
             maxGridItem = 5;
         }
 
-        const gridContainer = document.querySelector(".shorts-grid");
+        let gridContainer = document.querySelector(".shorts-grid");
         let gridsCount = gridContainer.querySelectorAll(".short-item").length;
         for (let i = 0; i <= gridsCount - 1; i++) {
             if (i >= maxGridItem) {
@@ -93,11 +83,6 @@ function adjustShortGridItem() {
     }
 }
 
-document.querySelector("i.ti-menu.hide-modal-sidebar").addEventListener("click", function() {
-    if(window.innerWidth < 1280){
-        document.querySelector(".modal-sidebar").classList.toggle("hidden");
-    }
-});
 function adjustSidebar(){
     let windowWidth = window.innerWidth;
     let contentWrapper = document.querySelector(".content-wrapper");

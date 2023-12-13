@@ -2,7 +2,6 @@ function handleToggleButtonSidebar(parrentSelector){
     document
     .querySelector(`${parrentSelector} ul.me-sidebar > li.more-button`)
     .addEventListener("click", function(event) {
-        console.log("ok")
         let itemCount = document
             .querySelector(`${parrentSelector} ul.me-sidebar`)
             .querySelectorAll("li.me-item").length;

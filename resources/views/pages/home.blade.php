@@ -15,8 +15,7 @@
 
         .wrapper {
             display: grid;
-            grid-template-rows: 62px calc(100vh-62px);
-            grid-template-cols: 224px 1fr;
+            grid-template-columns: 224px 1fr;
         }
     </style>
 @stop
@@ -1100,7 +1099,7 @@
                             <polygon points="10 14.65 15 12 10 9.35 10 14.65" fill="#fff"></polygon>
                         </g>
                     </svg>
-                    <h1 class="inline">Shorts</h1>
+                    <h1 class="inline text-xl sm:text-3xl">Shorts</h1>
                 </div>
 
                 <div class="shorts-grid gap-4 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">

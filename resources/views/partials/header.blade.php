@@ -1,4 +1,4 @@
-<div class="header-wrapper col-span-2 w-[100%] h-[40px] sm:h-[62px] p-1 sm:p-2 bg-white z-10 mr-1 self-start">
+<div class="header-wrapper fixed top-0 right-0 left-0 h-[45px] sm:h-[62px] p-1 sm:p-2 bg-white z-10">
     <div class="flex items-center justify-between">
         <!-- start header  -->
         <div class="start-header flex items-center ">
@@ -31,7 +31,7 @@
                     </svg>
                 </svg>
             </a>
-            <div class="pb-5 text-xs">VN</div>
+            <div class="pb-5 text-[10px]">VN</div>
         </div>
 
         <!-- Center header  -->
@@ -529,7 +529,7 @@
                     </div>
                 </div>
 
-                <div class="main-profile-dropdown dropdown absolute hidden right-0 top-11 bg-white w-[240px] sm:w-[268px] text-[12px] sm:text-sm h-[calc(100vh-90px)] font-sans overflow-y-auto">
+                <div class="main-profile-dropdown dropdown absolute hidden right-0 top-7 sm:top-11 bg-white w-[240px] sm:w-[268px] text-[12px] sm:text-sm h-[calc(100vh-90px)] font-sans overflow-y-auto">
                     <div class="identifier flex items-center p-4 border-b-2">
                         <img src="{{asset('img/T.jpg')}}" width="42" height="42" class="rounded-full mr-4 fle" />
                         <div class="flex flex-col">
